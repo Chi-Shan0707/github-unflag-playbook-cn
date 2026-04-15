@@ -114,7 +114,7 @@ This account is flagged, and therefore cannot authorize a third party applicatio
 ### 10. Profile 自定义区域加载失败
 
 **表现**：
-- 你在 GitHub 个人 profile 页面设置的自定义内容（pinned repositories、bio、social links 等）突然无法正常显示
+- 你在 GitHub 个人 profile 页面设置的自定义内容（github.com/username/username）突然无法正常显示
 - 页面该区域显示空白或加载出错
 - 重新编辑保存后仍然不生效
 
