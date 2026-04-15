@@ -21,7 +21,6 @@
 
 如果你不想提交 PR，也可以：
 - 在 [Issue](../../issues) 中填写，我们会帮你整理
-- 发送到 `github-flagged-cn@proton.me`
 
 ---
 

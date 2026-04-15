@@ -18,15 +18,13 @@
 
 你也可以：
 - 在 Issue 中填写信息（我们会帮你整理）
-- 发送到 `github-flagged-cn@proton.me`
 
 ### 2. 加入存在档案
 
 如果你只想被记录存在，不需要写完整案例：
 
 1. 在 [Issue](../../issues) 中提交，标题加 `[存在档案]` 前缀
-2. 或者发送邮件到 `github-flagged-cn@proton.me`
-3. 只需提供：用户名 + 大概时间 + 一句话
+2. 只需提供：用户名 + 大概时间 + 一句话
 
 ### 3. 改进文档
 
@@ -73,9 +71,6 @@
 | 渠道 | 说明 |
 |------|------|
 | **GitHub 内部** | Issue / Discussion / PR |
-| **GitHub 外部** | `github-flagged-cn@proton.me` |
-
-如果你无法使用 GitHub 内部渠道，请用邮件联系我们。
 
 ---
 
