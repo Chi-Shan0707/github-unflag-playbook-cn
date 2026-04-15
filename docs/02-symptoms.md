@@ -86,7 +86,41 @@ This account is flagged, and therefore cannot authorize a third party applicatio
 
 ---
 
-### 8. 通知 / 邮件中收到警告
+### 8. Star 不被计入
+
+**表现**：
+- 你 star 过的项目 star 数莫名少了一颗
+- 你以为是别人 unstar 了，结果发现**是自己的 star 没掉上去**
+- 你重新 star，star 数恢复；但别人看不到你的 star 记录
+
+这说明你的 star 操作虽然在你自己的视图里显示正常，但对其他用户是**不可见的**——你的存在感正在被系统性地抹除。
+
+---
+
+### 9. Organization 中消失
+
+**表现**：
+- 你原本是某个 Organization 的成员
+- 突然发现自己在 Organization 的成员列表中消失了
+- Organization 的仓库你也看不到或无法访问了
+- Organization 的管理员也表示没有手动移除你
+
+你并没有被踢出，而是你的账号被隐藏后，Organization 系统不再将你识别为可见成员。
+
+---
+
+### 10. Profile 自定义区域加载失败
+
+**表现**：
+- 你在 GitHub 个人 profile 页面设置的自定义内容（pinned repositories、bio、social links 等）突然无法正常显示
+- 页面该区域显示空白或加载出错
+- 重新编辑保存后仍然不生效
+
+Profile 的自定义数据本身可能还在，但因为账号的可见性被限制，渲染这些数据的公开接口也受到了影响。
+
+---
+
+### 11. 通知 / 邮件中收到警告
 
 **表现**：
 - 收到 GitHub 发送的关于账号状态的邮件
@@ -104,6 +138,9 @@ This account is flagged, and therefore cannot authorize a third party applicatio
 - [ ] 尝试授权一个第三方应用 → 是否失败并提示 flagged？
 - [ ] 在 GitHub 搜索中搜自己的用户名 → 能找到吗？
 - [ ] 访问自己的 GitHub Pages → 正常吗？
+- [ ] 检查你 star 过的项目 → star 数少了吗？去掉的那颗是不是你自己的？
+- [ ] 检查你所在的 Organization → 成员列表里还有你吗？
+- [ ] 访问自己的 profile 页面 → 自定义区域正常显示吗？
 - [ ] 检查注册邮箱 → 是否有 GitHub 发来的账号状态通知？
 
 如果以上多项异常，你很可能被 flag 了。请查看 [自救流程](04-support-and-appeal-playbook.md)。
