@@ -34,8 +34,8 @@ GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site
 | 3 | [可能原因：官方框架与社区经验](docs/03-possible-causes.md) | 官方政策 + 社区常见触发场景 |
 | 4 | [自救流程：support / appeal / how to write](docs/04-support-and-appeal-playbook.md) | 申诉步骤、工单模板、注意事项 |
 | 5 | [中国大陆常见障碍：SMS 验证](docs/05-china-mainland-sms-problem.md) | +86 号码在 appeal 流程中的已知问题 |
-| 6 | [案例库](cases/index.md) | 每个被 flag 的人的详细经历 |
-| 7 | [存在档案](docs/06-existence-ledger.md) | 记录那些曾经真实存在、却被隐藏的人 |
+| 6 | [存在档案](docs/06-existence-ledger.md) | 记录那些曾经真实存在、却被隐藏的人 |
+| 7 | [案例库](cases/index.md) | 每个被 flag 的人的详细经历 |
 
 ---
 

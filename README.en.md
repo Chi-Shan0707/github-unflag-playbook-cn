@@ -34,8 +34,8 @@ GitHub publicly documents [moderation actions](https://docs.github.com/en/site-p
 | 3 | [Possible Causes](docs/en/03-possible-causes.md) | Official policy framework + community-reported trigger scenarios |
 | 4 | [Recovery Playbook](docs/en/04-support-and-appeal-playbook.md) | Appeal steps, ticket templates, and important notes |
 | 5 | [SMS Verification Barrier](docs/en/05-china-mainland-sms-problem.md) | Known issues with +86 numbers in the appeal process |
-| 6 | [Case Library](cases/index.md) | Detailed experiences from people who were flagged |
-| 7 | [Existence Ledger](docs/en/06-existence-ledger.md) | Recording those who once truly existed but were hidden |
+| 6 | [Existence Ledger](docs/en/06-existence-ledger.md) | Recording those who once truly existed but were hidden |
+| 7 | [Case Library](cases/index.md) | Detailed experiences from people who were flagged |
 
 ---
 
