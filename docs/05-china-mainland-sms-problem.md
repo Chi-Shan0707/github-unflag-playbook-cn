@@ -1,5 +1,9 @@
 # 中国大陆常见障碍：SMS 验证
 
+[English](en/05-china-mainland-sms-problem.md) / 中文
+
+---
+
 > 这是中国大陆用户在 GitHub 申诉流程中最常遇到的障碍之一。
 
 ---

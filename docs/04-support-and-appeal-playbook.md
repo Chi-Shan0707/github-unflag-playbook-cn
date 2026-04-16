@@ -1,5 +1,9 @@
 # 自救流程：Support / Appeal
 
+[English](en/04-support-and-appeal-playbook.md) / 中文
+
+---
+
 > 本文档基于 GitHub 官方文档和社区经验整理。不保证适用于所有情况。
 
 ---

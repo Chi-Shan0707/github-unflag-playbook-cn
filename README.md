@@ -1,6 +1,17 @@
-# GitHub Unflag Playbook CN
+<p align="center">
+  <strong>GitHub Unflag Playbook CN</strong><br>
+  <em>面向中国大陆开发者的 GitHub 账号 flagged / hidden 自救手册与案例档案</em>
+</p>
 
-> **面向中国大陆开发者的 GitHub 账号 flagged / hidden 自救手册与案例档案**
+<p align="center">
+  中文 | <a href="README.en.md">English</a>
+</p>
+
+<p align="center">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="License: CC BY-NC-SA 4.0"></a>
+</p>
+
+---
 
 这个仓库记录 GitHub 账号被 flag / 被隐藏后的常见现象、恢复路径，以及那些在平台上曾经真实存在、却一度被公开抹去的开发者。
 
@@ -11,8 +22,6 @@
 这不是教人绕过规则，而是帮助正常用户理解被 flag 之后会发生什么、如何走恢复流程、以及如何留下自己的存在记录。
 
 GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement) 和 [Appeal / Reinstatement](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement) 流程，但并没有发布一份完整的"flagged account 指南"。社区里有大量零散案例，但少有一个中文、系统、面向中国大陆用户的整理仓库。
-
-
 
 ---
 

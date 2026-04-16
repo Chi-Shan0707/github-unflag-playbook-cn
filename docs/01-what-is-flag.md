@@ -1,5 +1,9 @@
 # 什么是 Flag
 
+[English](en/01-what-is-flag.md) / 中文
+
+---
+
 ## 定义
 
 在本仓库中，`flagged`（被标记）指一类**账号风控 / 审核状态**：
