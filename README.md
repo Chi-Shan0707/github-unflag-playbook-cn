@@ -78,3 +78,9 @@ GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site
 ---
 
 *当你能正常看到这段文字时，请想一想：有些人曾经和你一样在这里写代码，但现在他们的主页对你来说是 404。*
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Chi-Shan0707/github-unflag-playbook-cn&type=Date)](https://star-history.com/#Chi-Shan0707/github-unflag-playbook-cn&Date)
