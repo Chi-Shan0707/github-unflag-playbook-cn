@@ -17,6 +17,7 @@
 
 ## GitHub Pages
 
+网站观览：[github-unflag-playbook-cn](https://chi-shan0707.github.io/github-unflag-playbook-cn/)<br>
 如果你从 GitHub Pages 阅读本仓库，站点入口是 [index.md](index.md)。文档仍然以 Markdown 维护，后续扩展时只需要继续新增章节并在首页补充链接即可。
 
 ---

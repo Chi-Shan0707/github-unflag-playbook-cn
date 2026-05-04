@@ -17,6 +17,7 @@ This repository documents the common symptoms, recovery paths, and real stories 
 
 ## GitHub Pages
 
+View website [github-unflag-playbook-cn/en](https://chi-Shan0707.github.io/github-unflag-playbook-cn/en)
 If you are reading this repository through GitHub Pages, the site entry is [index.md](index.md). The content remains plain Markdown, so future expansion only needs new chapters plus links from the homepage.
 
 ---
