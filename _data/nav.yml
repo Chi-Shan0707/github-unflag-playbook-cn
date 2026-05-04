@@ -45,11 +45,11 @@ languages:
             url: /en/docs/01-what-is-flag/
           - label: Common Symptoms
             url: /en/docs/02-symptoms/
-          - label: Possible Causes: Official Framework & Community Experience
+          - label: "Possible Causes: Official Framework & Community Experience"
             url: /en/docs/03-possible-causes/
-          - label: Recovery Playbook: Support / Appeal
+          - label: "Recovery Playbook: Support / Appeal"
             url: /en/docs/04-support-and-appeal-playbook/
-          - label: Common Barrier for Mainland China: SMS Verification
+          - label: "Common Barrier for Mainland China: SMS Verification"
             url: /en/docs/05-china-mainland-sms-problem/
           - label: Existence Ledger
             url: /en/docs/06-existence-ledger/

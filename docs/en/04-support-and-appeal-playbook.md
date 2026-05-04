@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Recovery Playbook: Support / Appeal
+title: "Recovery Playbook: Support / Appeal"
 lang: en
 permalink: /en/docs/04-support-and-appeal-playbook/
 ---

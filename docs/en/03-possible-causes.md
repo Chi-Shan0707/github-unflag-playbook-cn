@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Possible Causes: Official Framework & Community Experience
+title: "Possible Causes: Official Framework & Community Experience"
 lang: en
 permalink: /en/docs/03-possible-causes/
 ---
