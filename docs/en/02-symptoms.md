@@ -152,14 +152,14 @@ If you suspect you've been flagged, work through these steps:
 - [ ] Visit your profile page → Does the custom section display normally?
 - [ ] Check your registered email → Did GitHub send any account status notifications?
 
-If multiple items above are abnormal, you are likely flagged. See the [Recovery Playbook](/en/docs/04-support-and-appeal-playbook/).
+If multiple items above are abnormal, you are likely flagged. See the [Recovery Playbook](04-support-and-appeal-playbook/)
 
 ---
 
 ## Previous
 
-[← What Is a Flag](/en/docs/01-what-is-flag/)
+[← What Is a Flag](01-what-is-flag/)
 
 ## Next
 
-[Possible Causes: Official Framework & Community Experience →](/en/docs/03-possible-causes/)
+[Possible Causes: Official Framework & Community Experience](03-possible-causes/)

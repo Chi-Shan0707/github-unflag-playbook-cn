@@ -56,7 +56,7 @@ Not necessarily. Many people who are flagged can still log in and operate on pri
 
 ### "Being flagged means I did something wrong"
 
-Not necessarily. The community includes many false-positive cases, including high-frequency API calls, abnormal activity after account compromise, etc. See [Possible Causes](/en/docs/03-possible-causes/).
+Not necessarily. The community includes many false-positive cases, including high-frequency API calls, abnormal activity after account compromise, etc. See [Possible Causes](03-possible-causes/).
 
 ### "Being flagged means I can never recover"
 
@@ -66,4 +66,4 @@ No. Many people have successfully recovered their accounts through the appeal pr
 
 ## Next
 
-[Common Symptoms of Being Flagged →](/en/docs/02-symptoms/)
+[Common Symptoms of Being Flagged](02-symptoms/)

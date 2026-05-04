@@ -35,12 +35,12 @@
     <div class="page-shell">
       <aside class="sidebar">
         <div class="brand">
-          <a class="brand-title" href="{{ nav.home_url }}">{{ site.data.nav.meta.title }}</a>
+          <a class="brand-title" href="{{ nav.home_url | relative_url }}">{{ site.data.nav.meta.title }}</a>
           <p>{{ site.data.nav.meta.subtitle[lang] }}</p>
         </div>
         <div class="lang-switch">
-          <a class="lang-button{% if lang == 'zh' %} is-active{% endif %}" href="{{ nav.home_url }}">{{ nav.home_label }}</a>
-          <a class="lang-button{% if lang == 'en' %} is-active{% endif %}" href="{{ switch_url }}">{{ nav.switch_label }}</a>
+          <a class="lang-button{% if lang == 'zh' %} is-active{% endif %}" href="{{ nav.home_url | relative_url }}">{{ nav.home_label }}</a>
+          <a class="lang-button{% if lang == 'en' %} is-active{% endif %}" href="{{ switch_url | relative_url }}">{{ nav.switch_label }}</a>
         </div>
         {% for section in nav.sections %}
           <section class="nav-section">
@@ -48,7 +48,7 @@
             <ul class="nav-list">
               {% for item in section.items %}
                 <li>
-                  <a href="{{ item.url }}"{% if current_url == item.url %} class="is-active"{% endif %}>{{ item.label }}</a>
+                  <a href="{{ item.url | relative_url }}"{% if current_url == item.url %} class="is-active"{% endif %}>{{ item.label }}</a>
                 </li>
               {% endfor %}
             </ul>

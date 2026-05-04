@@ -103,7 +103,7 @@ If the appeal process doesn't work, or you can't complete it (e.g., stuck at SMS
 
 If you are a Mainland China user, you may get stuck at the SMS verification step. GitHub's official SMS authentication supported countries list **does not include Mainland China (+86)**.
 
-See [Common Barrier for Mainland China: SMS Verification](/en/docs/05-china-mainland-sms-problem/)
+See [Common Barrier for Mainland China: SMS Verification](05-china-mainland-sms-problem/)
 
 #### Flagged Accounts Cannot Submit Support Requests
 
@@ -149,7 +149,7 @@ After your account is restored, we recommend:
 3. **Check your repositories** for completeness
 4. **Check GitHub Pages** for normal operation
 5. **Update your email** to ensure you can receive notifications
-6. Consider sharing your experience in this repository's [Case Library](/en/cases/) to help others
+6. Consider sharing your experience in this repository's [Case Library](../cases/) to help others
 
 ---
 
@@ -166,8 +166,8 @@ After your account is restored, we recommend:
 
 ## Previous
 
-[← Possible Causes](/en/docs/03-possible-causes/)
+[← Possible Causes](03-possible-causes/)
 
 ## Next
 
-[Common Barrier for Mainland China: SMS Verification →](/en/docs/05-china-mainland-sms-problem/)
+[Common Barrier for Mainland China: SMS Verification](05-china-mainland-sms-problem/)

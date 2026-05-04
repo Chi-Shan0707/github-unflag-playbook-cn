@@ -103,7 +103,7 @@ Thank you,
 
 如果你是中国大陆用户，你可能会卡在 SMS 验证这一步。GitHub 官方的 SMS 支持国家列表中**没有中国大陆（+86）**。
 
-详见 [中国大陆常见障碍：SMS 验证](/docs/05-china-mainland-sms-problem/)
+详见 [中国大陆常见障碍：SMS 验证](05-china-mainland-sms-problem/)
 
 #### 已被 flag 账号无法提交 Support
 
@@ -149,7 +149,7 @@ Thank you,
 3. **检查仓库**是否完整
 4. **检查 GitHub Pages** 是否恢复正常
 5. **更新邮箱**确保能收到通知
-6. 考虑把你的经历分享到本仓库的 [案例库](/cases/)，帮助其他人
+6. 考虑把你的经历分享到本仓库的 [案例库](../cases/)，帮助其他人
 
 ---
 
@@ -166,8 +166,8 @@ Thank you,
 
 ## 上一篇
 
-[← 可能原因](/docs/03-possible-causes/)
+[← 可能原因](03-possible-causes/)
 
 ## 下一篇
 
-[中国大陆常见障碍：SMS 验证 →](/docs/05-china-mainland-sms-problem/)
+[中国大陆常见障碍：SMS 验证](05-china-mainland-sms-problem/)

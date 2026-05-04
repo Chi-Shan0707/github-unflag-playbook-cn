@@ -122,8 +122,8 @@ The following recommendations come from community experience — **they cannot g
 
 ## Previous
 
-[← Common Symptoms of Being Flagged](/en/docs/02-symptoms/)
+[← Common Symptoms of Being Flagged](02-symptoms/)
 
 ## Next
 
-[Recovery Playbook: Support / Appeal / How to Write →](/en/docs/04-support-and-appeal-playbook/)
+[Recovery Playbook: Support / Appeal / How to Write](04-support-and-appeal-playbook/)

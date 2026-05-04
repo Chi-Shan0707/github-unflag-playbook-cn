@@ -75,4 +75,4 @@ permalink: /docs/06-existence-ledger/
 
 ## 上一篇
 
-[← 中国大陆常见障碍：SMS 验证](/docs/05-china-mainland-sms-problem/)
+[← 中国大陆常见障碍：SMS 验证](05-china-mainland-sms-problem/)

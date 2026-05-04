@@ -75,4 +75,4 @@ If you have been flagged or suspended, and cannot recover, you can contact us to
 
 ## Previous
 
-[← Common Barrier for Mainland China: SMS Verification](/en/docs/05-china-mainland-sms-problem/)
+[← Common Barrier for Mainland China: SMS Verification](05-china-mainland-sms-problem/)

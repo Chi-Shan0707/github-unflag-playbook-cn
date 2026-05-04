@@ -107,8 +107,8 @@ This is not asking for special treatment — it is asking for a fair opportunity
 
 ## Previous
 
-[← Recovery Playbook](/en/docs/04-support-and-appeal-playbook/)
+[← Recovery Playbook](04-support-and-appeal-playbook/)
 
 ## Next
 
-[Existence Ledger →](/en/docs/06-existence-ledger/)
+[Existence Ledger](06-existence-ledger/)

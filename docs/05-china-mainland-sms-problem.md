@@ -109,8 +109,8 @@ permalink: /docs/05-china-mainland-sms-problem/
 
 ## 上一篇
 
-[← 自救流程](/docs/04-support-and-appeal-playbook/)
+[← 自救流程](04-support-and-appeal-playbook/)
 
 ## 下一篇
 
-[存在档案 →](/docs/06-existence-ledger/)
+[存在档案](06-existence-ledger/)
