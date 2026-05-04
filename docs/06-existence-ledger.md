@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 存在档案
-lang: zh
-permalink: /docs/06-existence-ledger/
 ---
 
 # 存在档案

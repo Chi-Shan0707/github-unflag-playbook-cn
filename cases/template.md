@@ -1,9 +1,5 @@
 ---
-layout: default
 title: 案例模板
-lang: zh
-permalink: /cases/template/
-alt_url: /en/cases/
 ---
 
 # 案例模板

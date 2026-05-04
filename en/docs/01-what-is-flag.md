@@ -1,8 +1,5 @@
 ---
-layout: default
 title: What Is a Flag
-lang: en
-permalink: /en/docs/01-what-is-flag/
 ---
 
 # What Is a Flag

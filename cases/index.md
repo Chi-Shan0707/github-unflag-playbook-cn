@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 案例库
-lang: zh
-permalink: /cases/
 ---
 
 # 案例库

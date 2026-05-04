@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Existence Ledger
-lang: en
-permalink: /en/docs/06-existence-ledger/
 ---
 
 # Existence Ledger

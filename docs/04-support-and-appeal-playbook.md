@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 自救流程：Support / Appeal
-lang: zh
-permalink: /docs/04-support-and-appeal-playbook/
 ---
 
 # 自救流程：Support / Appeal
@@ -149,7 +146,7 @@ Thank you,
 3. **检查仓库**是否完整
 4. **检查 GitHub Pages** 是否恢复正常
 5. **更新邮箱**确保能收到通知
-6. 考虑把你的经历分享到本仓库的 [案例库](../cases/)，帮助其他人
+6. 考虑把你的经历分享到本仓库的 [案例库](/github-unflag-playbook-cn/cases/)，帮助其他人
 
 ---
 

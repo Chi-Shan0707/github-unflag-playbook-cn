@@ -1,8 +1,5 @@
 ---
-layout: default
 title: "Common Barrier for Mainland China: SMS Verification"
-lang: en
-permalink: /en/docs/05-china-mainland-sms-problem/
 ---
 
 # Common Barrier for Mainland China: SMS Verification

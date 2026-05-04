@@ -1,5 +1,16 @@
 title: GitHub Unflag Playbook CN
 description: A concise Markdown knowledge base for flag recovery, symptoms, causes, and case records.
-lang: zh-CN
 baseurl: /github-unflag-playbook-cn
 theme: minima
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      lang: "zh"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"

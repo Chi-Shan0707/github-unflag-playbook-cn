@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 可能原因：官方框架与社区经验
-lang: zh
-permalink: /docs/03-possible-causes/
 ---
 
 # 可能原因：官方框架与社区经验

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 中国大陆常见障碍：SMS 验证
-lang: zh
-permalink: /docs/05-china-mainland-sms-problem/
 ---
 
 # 中国大陆常见障碍：SMS 验证

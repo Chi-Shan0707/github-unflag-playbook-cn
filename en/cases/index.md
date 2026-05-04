@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Case Library
-lang: en
-permalink: /en/cases/
 ---
 
 # Case Library

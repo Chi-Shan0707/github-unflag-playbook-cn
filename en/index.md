@@ -1,8 +1,5 @@
 ---
-layout: default
 title: GitHub Unflag Playbook CN
-lang: en
-permalink: /en/
 ---
 
 # GitHub Unflag Playbook CN

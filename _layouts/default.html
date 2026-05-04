@@ -7,7 +7,7 @@
     {% if site.description or page.description %}
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     {% endif %}
-    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | prepend: site.baseurl }}">
   </head>
   <body>
     {% assign lang = page.lang | default: 'zh' %}
@@ -18,29 +18,28 @@
     {% endif %}
     {% assign other_nav = site.data.nav.languages[other_lang] %}
     {% assign current_url = page.url | replace: 'index.html', '' %}
-    {% assign switch_url = other_nav.home_url %}
-    {% if page.alt_url %}
-      {% assign switch_url = page.alt_url %}
-    {% elsif current_url == '/' or current_url == '/en/' %}
-      {% assign switch_url = other_nav.home_url %}
-    {% elsif lang == 'en' and current_url contains '/en/' %}
-      {% assign switch_url = current_url | replace_first: '/en/', '/' %}
-    {% elsif lang == 'zh' and current_url contains '/docs/' %}
-      {% assign switch_url = '/en' | append: current_url %}
-    {% elsif lang == 'zh' and current_url contains '/cases/' %}
-      {% assign switch_url = '/en' | append: current_url %}
-    {% elsif lang == 'zh' and current_url contains '/contributing/' %}
-      {% assign switch_url = '/en' | append: current_url %}
+    {% if lang == 'en' %}
+      {% if current_url == '/en/' %}
+        {% assign switch_url = '/' %}
+      {% else %}
+        {% assign switch_url = current_url | replace_first: '/en/', '/' %}
+      {% endif %}
+    {% else %}
+      {% if current_url == '/' %}
+        {% assign switch_url = '/en/' %}
+      {% else %}
+        {% assign switch_url = '/en' | append: current_url %}
+      {% endif %}
     {% endif %}
     <div class="page-shell">
       <aside class="sidebar">
         <div class="brand">
-          <a class="brand-title" href="{{ nav.home_url | relative_url }}">{{ site.data.nav.meta.title }}</a>
+          <a class="brand-title" href="{{ nav.home_url | prepend: site.baseurl }}">{{ site.data.nav.meta.title }}</a>
           <p>{{ site.data.nav.meta.subtitle[lang] }}</p>
         </div>
         <div class="lang-switch">
-          <a class="lang-button{% if lang == 'zh' %} is-active{% endif %}" href="{{ nav.home_url | relative_url }}">{{ nav.home_label }}</a>
-          <a class="lang-button{% if lang == 'en' %} is-active{% endif %}" href="{{ switch_url | relative_url }}">{{ nav.switch_label }}</a>
+          <a class="lang-button{% if lang == 'zh' %} is-active{% endif %}" href="{{ nav.home_url | prepend: site.baseurl }}">{{ nav.home_label }}</a>
+          <a class="lang-button{% if lang == 'en' %} is-active{% endif %}" href="{{ switch_url | prepend: site.baseurl }}">{{ nav.switch_label }}</a>
         </div>
         {% for section in nav.sections %}
           <section class="nav-section">
@@ -48,7 +47,7 @@
             <ul class="nav-list">
               {% for item in section.items %}
                 <li>
-                  <a href="{{ item.url | relative_url }}"{% if current_url == item.url %} class="is-active"{% endif %}>{{ item.label }}</a>
+                  <a href="{{ item.url | prepend: site.baseurl }}"{% if current_url == item.url %} class="is-active"{% endif %}>{{ item.label }}</a>
                 </li>
               {% endfor %}
             </ul>

@@ -1,8 +1,5 @@
 ---
-layout: default
 title: Common Symptoms of Being Flagged
-lang: en
-permalink: /en/docs/02-symptoms/
 ---
 
 # Common Symptoms of Being Flagged

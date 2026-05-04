@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 被 Flag 的常见现象
-lang: zh
-permalink: /docs/02-symptoms/
 ---
 
 # 被 Flag 的常见现象

@@ -58,6 +58,6 @@ languages:
           - label: Case Library
             url: /en/cases/
           - label: Case Template
-            url: /cases/template/
+            url: /en/cases/template/
           - label: chi-shan0707
-            url: /cases/chi-shan0707/
+            url: /en/cases/chi-shan0707/

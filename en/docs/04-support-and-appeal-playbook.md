@@ -1,8 +1,5 @@
 ---
-layout: default
 title: "Recovery Playbook: Support / Appeal"
-lang: en
-permalink: /en/docs/04-support-and-appeal-playbook/
 ---
 
 # Recovery Playbook: Support / Appeal
@@ -149,7 +146,7 @@ After your account is restored, we recommend:
 3. **Check your repositories** for completeness
 4. **Check GitHub Pages** for normal operation
 5. **Update your email** to ensure you can receive notifications
-6. Consider sharing your experience in this repository's [Case Library](../cases/) to help others
+6. Consider sharing your experience in this repository's [Case Library](/github-unflag-playbook-cn/en/cases/) to help others
 
 ---
 

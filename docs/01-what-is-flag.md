@@ -1,8 +1,5 @@
 ---
-layout: default
 title: 什么是 Flag
-lang: zh
-permalink: /docs/01-what-is-flag/
 ---
 
 # 什么是 Flag
