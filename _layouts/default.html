@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'zh' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.data.nav.meta.title }}</title>
+    {% if site.description or page.description %}
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    {% assign lang = page.lang | default: 'zh' %}
+    {% assign nav = site.data.nav.languages[lang] %}
+    {% assign other_lang = 'en' %}
+    {% if lang == 'en' %}
+      {% assign other_lang = 'zh' %}
+    {% endif %}
+    {% assign other_nav = site.data.nav.languages[other_lang] %}
+    {% assign current_url = page.url | replace: 'index.html', '' %}
+    {% assign switch_url = other_nav.home_url %}
+    {% if page.alt_url %}
+      {% assign switch_url = page.alt_url %}
+    {% elsif current_url == '/' or current_url == '/en/' %}
+      {% assign switch_url = other_nav.home_url %}
+    {% elsif lang == 'en' and current_url contains '/en/' %}
+      {% assign switch_url = current_url | replace_first: '/en/', '/' %}
+    {% elsif lang == 'zh' and current_url contains '/docs/' %}
+      {% assign switch_url = '/en' | append: current_url %}
+    {% elsif lang == 'zh' and current_url contains '/cases/' %}
+      {% assign switch_url = '/en' | append: current_url %}
+    {% elsif lang == 'zh' and current_url contains '/contributing/' %}
+      {% assign switch_url = '/en' | append: current_url %}
+    {% endif %}
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <a class="brand-title" href="{{ nav.home_url }}">{{ site.data.nav.meta.title }}</a>
+          <p>{{ site.data.nav.meta.subtitle[lang] }}</p>
+        </div>
+        <div class="lang-switch">
+          <a class="lang-button{% if lang == 'zh' %} is-active{% endif %}" href="{{ nav.home_url }}">{{ nav.home_label }}</a>
+          <a class="lang-button{% if lang == 'en' %} is-active{% endif %}" href="{{ switch_url }}">{{ nav.switch_label }}</a>
+        </div>
+        {% for section in nav.sections %}
+          <section class="nav-section">
+            <h2>{{ section.title }}</h2>
+            <ul class="nav-list">
+              {% for item in section.items %}
+                <li>
+                  <a href="{{ item.url }}"{% if current_url == item.url %} class="is-active"{% endif %}>{{ item.label }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+      </aside>
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>

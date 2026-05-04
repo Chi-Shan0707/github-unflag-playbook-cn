@@ -1,8 +1,15 @@
+---
+layout: default
+title: 案例模板
+lang: zh
+permalink: /cases/template/
+alt_url: /en/cases/
+---
+
 # 案例模板
 
 > 复制此模板，重命名为 `<你的GitHub用户名>.md`，填写后提交 PR。
 
----
 
 ## 基本信息
 

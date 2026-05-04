@@ -1,8 +1,11 @@
-# What Is a Flag
-
-English / [中文](../01-what-is-flag.md)
-
 ---
+layout: default
+title: What Is a Flag
+lang: en
+permalink: /en/docs/01-what-is-flag/
+---
+
+# What Is a Flag
 
 ## Definition
 
@@ -53,7 +56,7 @@ Not necessarily. Many people who are flagged can still log in and operate on pri
 
 ### "Being flagged means I did something wrong"
 
-Not necessarily. The community includes many false-positive cases, including high-frequency API calls, abnormal activity after account compromise, etc. See [Possible Causes](03-possible-causes.md).
+Not necessarily. The community includes many false-positive cases, including high-frequency API calls, abnormal activity after account compromise, etc. See [Possible Causes](/en/docs/03-possible-causes/).
 
 ### "Being flagged means I can never recover"
 
@@ -63,4 +66,4 @@ No. Many people have successfully recovered their accounts through the appeal pr
 
 ## Next
 
-[Common Symptoms of Being Flagged →](02-symptoms.md)
+[Common Symptoms of Being Flagged →](/en/docs/02-symptoms/)

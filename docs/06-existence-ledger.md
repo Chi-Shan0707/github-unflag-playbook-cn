@@ -1,8 +1,11 @@
-# 存在档案
-
-[English](en/06-existence-ledger.md) / 中文
-
 ---
+layout: default
+title: 存在档案
+lang: zh
+permalink: /docs/06-existence-ledger/
+---
+
+# 存在档案
 
 > 当一个账号被隐藏，他在平台上的公开存在会突然变得像从未出现过。这个页面记录那些曾经真实存在、真实贡献过的人。
 
@@ -72,4 +75,4 @@
 
 ## 上一篇
 
-[← 中国大陆常见障碍：SMS 验证](05-china-mainland-sms-problem.md)
+[← 中国大陆常见障碍：SMS 验证](/docs/05-china-mainland-sms-problem/)

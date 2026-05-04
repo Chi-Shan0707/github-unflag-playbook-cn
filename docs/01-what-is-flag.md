@@ -1,8 +1,11 @@
-# 什么是 Flag
-
-[English](en/01-what-is-flag.md) / 中文
-
 ---
+layout: default
+title: 什么是 Flag
+lang: zh
+permalink: /docs/01-what-is-flag/
+---
+
+# 什么是 Flag
 
 ## 定义
 
@@ -53,7 +56,7 @@ GitHub 官方公开描述的是 **moderation actions**（管理措施）和 **Ap
 
 ### "被 flag 说明我做错了什么"
 
-不一定。社区中有大量误触发案例，包括高频 API 调用、账号被盗后异常活动等。详见 [可能原因](03-possible-causes.md)。
+不一定。社区中有大量误触发案例，包括高频 API 调用、账号被盗后异常活动等。详见 [可能原因](/docs/03-possible-causes/)。
 
 ### "被 flag 就永远恢复不了"
 
@@ -63,4 +66,4 @@ GitHub 官方公开描述的是 **moderation actions**（管理措施）和 **Ap
 
 ## 下一篇
 
-[被 flag 的常见现象 →](02-symptoms.md)
+[被 flag 的常见现象 →](/docs/02-symptoms/)

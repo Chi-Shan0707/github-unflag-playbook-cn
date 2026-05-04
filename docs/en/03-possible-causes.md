@@ -1,6 +1,11 @@
-# Possible Causes: Official Framework & Community Experience
+---
+layout: default
+title: Possible Causes: Official Framework & Community Experience
+lang: en
+permalink: /en/docs/03-possible-causes/
+---
 
-English / [中文](../03-possible-causes.md)
+# Possible Causes: Official Framework & Community Experience
 
 > **Important Disclaimer**: GitHub has not publicly disclosed the "exact trigger thresholds for being flagged." The following is divided into "official level" and "community level." Please strictly distinguish between them.
 
@@ -117,8 +122,8 @@ The following recommendations come from community experience — **they cannot g
 
 ## Previous
 
-[← Common Symptoms of Being Flagged](02-symptoms.md)
+[← Common Symptoms of Being Flagged](/en/docs/02-symptoms/)
 
 ## Next
 
-[Recovery Playbook: Support / Appeal / How to Write →](04-support-and-appeal-playbook.md)
+[Recovery Playbook: Support / Appeal / How to Write →](/en/docs/04-support-and-appeal-playbook/)

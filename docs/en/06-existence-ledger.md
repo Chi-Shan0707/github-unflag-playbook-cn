@@ -1,6 +1,11 @@
-# Existence Ledger
+---
+layout: default
+title: Existence Ledger
+lang: en
+permalink: /en/docs/06-existence-ledger/
+---
 
-English / [中文](../06-existence-ledger.md)
+# Existence Ledger
 
 > When an account is hidden, its public presence on the platform suddenly seems to have never existed. This page records those who once truly existed and truly contributed.
 
@@ -70,4 +75,4 @@ If you have been flagged or suspended, and cannot recover, you can contact us to
 
 ## Previous
 
-[← Common Barrier for Mainland China: SMS Verification](05-china-mainland-sms-problem.md)
+[← Common Barrier for Mainland China: SMS Verification](/en/docs/05-china-mainland-sms-problem/)

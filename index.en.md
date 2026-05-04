@@ -1,15 +1,15 @@
 ---
 layout: default
 title: GitHub Unflag Playbook CN
-lang: zh
-permalink: /
+lang: en
+permalink: /en/
 ---
 
 # GitHub Unflag Playbook CN
 
 A concise playbook and case archive for GitHub users affected by flag / hidden status.
 
-Use the sidebar to browse the docs and cases. Switch languages from the buttons above the navigation.
+Use the sidebar to browse the docs and cases. Switch languages from the buttons at the top of the sidebar.
 
 ## Start Here
 

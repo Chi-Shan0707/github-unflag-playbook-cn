@@ -1,8 +1,11 @@
-# 中国大陆常见障碍：SMS 验证
-
-[English](en/05-china-mainland-sms-problem.md) / 中文
-
 ---
+layout: default
+title: 中国大陆常见障碍：SMS 验证
+lang: zh
+permalink: /docs/05-china-mainland-sms-problem/
+---
+
+# 中国大陆常见障碍：SMS 验证
 
 > 这是中国大陆用户在 GitHub 申诉流程中最常遇到的障碍之一。
 
@@ -106,8 +109,8 @@
 
 ## 上一篇
 
-[← 自救流程](04-support-and-appeal-playbook.md)
+[← 自救流程](/docs/04-support-and-appeal-playbook/)
 
 ## 下一篇
 
-[存在档案 →](06-existence-ledger.md)
+[存在档案 →](/docs/06-existence-ledger/)

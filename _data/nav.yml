@@ -1,0 +1,63 @@
+meta:
+  title: GitHub Unflag Playbook CN
+  repo_url: https://github.com/Chi-Shan0707/github-unflag-playbook-cn
+  subtitle:
+    zh: 面向中国大陆开发者的 GitHub 账号 flagged / hidden 自救手册与案例档案
+    en: A concise playbook and case archive for GitHub users affected by flag / hidden status
+languages:
+  zh:
+    home_url: /
+    home_label: 中文
+    switch_url: /en/
+    switch_label: English
+    sections:
+      - title: 文档
+        items:
+          - label: 什么是 Flag
+            url: /docs/01-what-is-flag/
+          - label: 被 Flag 的常见现象
+            url: /docs/02-symptoms/
+          - label: 可能原因：官方框架与社区经验
+            url: /docs/03-possible-causes/
+          - label: 自救流程：Support / Appeal
+            url: /docs/04-support-and-appeal-playbook/
+          - label: 中国大陆常见障碍：SMS 验证
+            url: /docs/05-china-mainland-sms-problem/
+          - label: 存在档案
+            url: /docs/06-existence-ledger/
+      - title: 案例
+        items:
+          - label: 案例库
+            url: /cases/
+          - label: 案例模板
+            url: /cases/template/
+          - label: chi-shan0707
+            url: /cases/chi-shan0707/
+  en:
+    home_url: /en/
+    home_label: English
+    switch_url: /
+    switch_label: 中文
+    sections:
+      - title: Docs
+        items:
+          - label: What Is a Flag
+            url: /en/docs/01-what-is-flag/
+          - label: Common Symptoms
+            url: /en/docs/02-symptoms/
+          - label: Possible Causes: Official Framework & Community Experience
+            url: /en/docs/03-possible-causes/
+          - label: Recovery Playbook: Support / Appeal
+            url: /en/docs/04-support-and-appeal-playbook/
+          - label: Common Barrier for Mainland China: SMS Verification
+            url: /en/docs/05-china-mainland-sms-problem/
+          - label: Existence Ledger
+            url: /en/docs/06-existence-ledger/
+      - title: Cases
+        items:
+          - label: Case Library
+            url: /en/cases/
+          - label: Case Template
+            url: /cases/template/
+          - label: chi-shan0707
+            url: /cases/chi-shan0707/

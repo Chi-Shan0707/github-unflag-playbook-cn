@@ -1,6 +1,11 @@
-# Common Barrier for Mainland China: SMS Verification
+---
+layout: default
+title: Common Barrier for Mainland China: SMS Verification
+lang: en
+permalink: /en/docs/05-china-mainland-sms-problem/
+---
 
-English / [中文](../05-china-mainland-sms-problem.md)
+# Common Barrier for Mainland China: SMS Verification
 
 > This is one of the most common barriers encountered by Mainland China users during GitHub's appeal process. If you're reading this in English, chances are you're not a Mainland China user — so you probably won't run into this particular issue yourself. But it's worth understanding why so many people get stuck here.
 
@@ -102,8 +107,8 @@ This is not asking for special treatment — it is asking for a fair opportunity
 
 ## Previous
 
-[← Recovery Playbook](04-support-and-appeal-playbook.md)
+[← Recovery Playbook](/en/docs/04-support-and-appeal-playbook/)
 
 ## Next
 
-[Existence Ledger →](06-existence-ledger.md)
+[Existence Ledger →](/en/docs/06-existence-ledger/)

@@ -1,8 +1,11 @@
-# 被 Flag 的常见现象
-
-[English](en/02-symptoms.md) / 中文
-
 ---
+layout: default
+title: 被 Flag 的常见现象
+lang: zh
+permalink: /docs/02-symptoms/
+---
+
+# 被 Flag 的常见现象
 
 > **注意**：以下分为"高置信现象"（有 GitHub 官方文档支撑）和"社区反复报告现象"（来自大量用户报告但未经官方逐一确认）。请区分对待。
 
@@ -149,14 +152,14 @@ Profile 的自定义数据本身可能还在，但因为账号的可见性被限
 - [ ] 访问自己的 profile 页面 → 自定义区域正常显示吗？
 - [ ] 检查注册邮箱 → 是否有 GitHub 发来的账号状态通知？
 
-如果以上多项异常，你很可能被 flag 了。请查看 [自救流程](04-support-and-appeal-playbook.md)。
+如果以上多项异常，你很可能被 flag 了。请查看 [自救流程](/docs/04-support-and-appeal-playbook/)。
 
 ---
 
 ## 上一篇
 
-[← 什么是 Flag](01-what-is-flag.md)
+[← 什么是 Flag](/docs/01-what-is-flag/)
 
 ## 下一篇
 
-[可能原因：官方框架与社区经验 →](03-possible-causes.md)
+[可能原因：官方框架与社区经验 →](/docs/03-possible-causes/)

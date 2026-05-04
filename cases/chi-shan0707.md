@@ -1,6 +1,12 @@
-# 案例：chi-shan0707
-
 ---
+layout: default
+title: 案例：chi-shan0707
+lang: zh
+permalink: /cases/chi-shan0707/
+alt_url: /en/cases/
+---
+
+# 案例：chi-shan0707
 
 ## 基本信息
 
