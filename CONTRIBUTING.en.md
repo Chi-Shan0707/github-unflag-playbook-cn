@@ -10,21 +10,23 @@
 
 If you have been flagged and are willing to share your experience:
 
+**Option A: Use the Issue form (recommended, easiest)**
+- Click [Submit Case Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml)
+- Fill in the form — no need to know Markdown or Git
+
+**Option B: Submit a PR**
 1. Copy [cases/template.md](cases/template.md)
 2. Fill in your information
 3. Rename the file to `<your-github-username>.md`
 4. Submit a PR
 5. In the PR, confirm that you consent to making this information public
 
-You can also:
-- Fill in your information in an Issue (we'll help organize it)
-
 ### 2. Join the Existence Ledger
 
 If you just want your existence to be recorded, without writing a full case:
 
-1. Submit an [Issue](../../issues) with the prefix `[Existence Ledger]` in the title
-2. Only provide: username + approximate time + one sentence
+- Click [Join Existence Ledger Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=existence-ledger.yml)
+- Fill in the form — no full case required
 
 ### 3. Improve Documentation
 

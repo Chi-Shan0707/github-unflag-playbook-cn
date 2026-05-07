@@ -1,0 +1,41 @@
+name: 🕯️ 加入存在档案 / Join Existence Ledger
+description: 只想被记录存在，不需要写完整案例 / Just want to be recorded, no full case needed
+title: '[存在档案] '
+labels: ['existence-ledger']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        如果你只想被记录存在，请填写以下最少信息。我们会在这个页面留下你曾经存在过的记录。
+        If you just want to be recorded, please fill in the minimum information below. We will leave a record that you once existed.
+
+  - type: input
+    id: username
+    attributes:
+      label: GitHub 用户名 / Username
+      placeholder: e.g. chi-shan0707
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: 大概时间 / Approximate Time
+      placeholder: e.g. 2025-04
+
+  - type: input
+    id: sentence
+    attributes:
+      label: 一句话 / One Sentence
+      placeholder: 你想留下的一句话...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 同意声明 / Consent
+      options:
+        - label: 我同意在本仓库的存在档案页面记录以上信息 / I consent to recording this information in the Existence Ledger
+          required: true
+        - label: 我理解我可以随时要求删除这条记录 / I understand I can request deletion at any time

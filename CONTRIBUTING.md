@@ -14,21 +14,23 @@
 
 如果你曾被 flag 并愿意分享经历：
 
+**方式 A：使用 Issue 表单（推荐，最简单）**
+- 直接点击 [提交案例 Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml)
+- 按表单填写即可，无需熟悉 Markdown 或 Git 操作
+
+**方式 B：提交 PR**
 1. 复制 [cases/template.md](cases/template.md)
 2. 填写你的信息
 3. 将文件重命名为 `<你的GitHub用户名>.md`
 4. 提交 PR
 5. 在 PR 中说明你同意公开这些信息
 
-你也可以：
-- 在 Issue 中填写信息（我们会帮你整理）
-
 ### 2. 加入存在档案
 
 如果你只想被记录存在，不需要写完整案例：
 
-1. 在 [Issue](../../issues) 中提交，标题加 `[存在档案]` 前缀
-2. 只需提供：用户名 + 大概时间 + 一句话
+- 直接点击 [加入存在档案 Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=existence-ledger.yml)
+- 填写表单即可，无需写完整案例
 
 ### 3. 改进文档
 
