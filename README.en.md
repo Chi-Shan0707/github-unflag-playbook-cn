@@ -8,21 +8,24 @@
 </p>
 
 <p align="center">
-  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="License: CC BY-NC-SA 4.0"></a>
+  <a href="https://chi-shan0707.github.io/github-unflag-playbook-cn/en/"><img src="https://img.shields.io/badge/Website-Online-lightseagreen?style=flat-square&logo=githubpages" alt="Website"></a>
+  <a href="https://github.com/Chi-Shan0707/github-unflag-playbook-cn/stargazers"><img src="https://img.shields.io/github/stars/Chi-Shan0707/github-unflag-playbook-cn?style=flat-square&color=gold" alt="GitHub Stars"></a>
+  <a href="https://github.com/Chi-Shan0707/github-unflag-playbook-cn/network/members"><img src="https://img.shields.io/github/forks/Chi-Shan0707/github-unflag-playbook-cn?style=flat-square&color=silver" alt="GitHub Forks"></a>
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=flat-square" alt="License: CC BY-NC-SA 4.0"></a>
 </p>
 
 ---
 
-This repository documents the common symptoms, recovery paths, and real stories of developers whose GitHub accounts were flagged or hidden — with particular attention to the challenges faced by users in Mainland China.
+> 📌 This repository documents the common symptoms, recovery paths, and real stories of developers whose GitHub accounts were flagged or hidden — with particular attention to the challenges faced by users in Mainland China.
 
-## GitHub Pages
+## 🌐 GitHub Pages
 
-View website [github-unflag-playbook-cn/en](https://chi-Shan0707.github.io/github-unflag-playbook-cn/en)
+🔗 **View website**: [chi-shan0707.github.io/github-unflag-playbook-cn/en](https://chi-shan0707.github.io/github-unflag-playbook-cn/en)  
 If you are reading this repository through GitHub Pages, the site entry is [index.md](index.md). The content remains plain Markdown, so future expansion only needs new chapters plus links from the homepage.
 
 ---
 
-## What This Repository Is
+## 📖 What This Repository Is
 
 This is not a guide to circumventing rules. It helps legitimate users understand what happens when they get flagged, how to navigate the recovery process, and how to leave a record of their existence.
 
@@ -30,7 +33,7 @@ GitHub publicly documents [moderation actions](https://docs.github.com/en/site-p
 
 ---
 
-## Table of Contents
+## 📂 Table of Contents
 
 | # | Chapter | Description |
 |---|---------|-------------|
@@ -44,7 +47,7 @@ GitHub publicly documents [moderation actions](https://docs.github.com/en/site-p
 
 ---
 
-## Our Stance
+## ⚠️ Our Stance
 
 - **We do not encourage circumventing risk controls**: This repository does not provide methods to bypass GitHub's policies
 - **We promise no "instant recovery"**: Recovery times vary from days to months depending on the situation
@@ -53,33 +56,39 @@ GitHub publicly documents [moderation actions](https://docs.github.com/en/site-p
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
-If you have been flagged and would like to share your experience, see [CONTRIBUTING.md](CONTRIBUTING.en.md).
+If you have been flagged and would like to share your experience, see [CONTRIBUTING.en.md](CONTRIBUTING.en.md).
 
 You can:
-- Submit your case (fill in the template and submit a PR)
-- Discuss in Issues or Discussions
-- Just want to "be recorded"? See the [Existence Ledger](docs/en/06-existence-ledger.md) for how to contact us
+- 📝 Submit your case (fill in the template and submit a PR)
+- 💬 Discuss in Issues or Discussions
+- 🕯️ Just want to "be recorded"? See the [Existence Ledger](docs/en/06-existence-ledger.md) for how to contact us
 
 ---
 
-## Contact
+## 📬 Contact
 
 | Channel | Details |
 |---------|---------|
-| GitHub Issue | [Submit an Issue](../../issues) |
-| GitHub Discussion | [Join the Discussion](../../discussions) |
+| GitHub Issue | [Submit an Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues) |
+| GitHub Discussion | [Join the Discussion](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
 | Email | Not available yet |
 
 > **Privacy**: By default, only information you consent to share is made public. If you just want to "be recorded," you can leave only a username, a time, and one sentence.
 
 ---
 
-## License
+## 📜 License
 
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ---
 
 *When you can read this text normally, take a moment to think: there are people who once wrote code here just like you, but now their profiles are 404 to you.*
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Chi-Shan0707/github-unflag-playbook-cn&type=Date)](https://star-history.com/#Chi-Shan0707/github-unflag-playbook-cn&Date)

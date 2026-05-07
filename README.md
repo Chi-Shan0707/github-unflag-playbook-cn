@@ -8,21 +8,24 @@
 </p>
 
 <p align="center">
-  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="License: CC BY-NC-SA 4.0"></a>
+  <a href="https://chi-shan0707.github.io/github-unflag-playbook-cn/"><img src="https://img.shields.io/badge/Website-在线-lightseagreen?style=flat-square&logo=githubpages" alt="Website"></a>
+  <a href="https://github.com/Chi-Shan0707/github-unflag-playbook-cn/stargazers"><img src="https://img.shields.io/github/stars/Chi-Shan0707/github-unflag-playbook-cn?style=flat-square&color=gold" alt="GitHub Stars"></a>
+  <a href="https://github.com/Chi-Shan0707/github-unflag-playbook-cn/network/members"><img src="https://img.shields.io/github/forks/Chi-Shan0707/github-unflag-playbook-cn?style=flat-square&color=silver" alt="GitHub Forks"></a>
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=flat-square" alt="License: CC BY-NC-SA 4.0"></a>
 </p>
 
 ---
 
-这个仓库记录 GitHub 账号被 flag / 被隐藏后的常见现象、恢复路径，以及那些在平台上曾经真实存在、却一度被公开抹去的开发者。
+> 📌 这个仓库记录 GitHub 账号被 flag / 被隐藏后的常见现象、恢复路径，以及那些在平台上曾经真实存在、却一度被公开抹去的开发者。
 
-## GitHub Pages
+## 🌐 GitHub Pages
 
-网站观览：[github-unflag-playbook-cn](https://chi-shan0707.github.io/github-unflag-playbook-cn/)<br>
+🔗 **网站观览**：[chi-shan0707.github.io/github-unflag-playbook-cn](https://chi-shan0707.github.io/github-unflag-playbook-cn/)  
 如果你从 GitHub Pages 阅读本仓库，站点入口是 [index.md](index.md)。文档仍然以 Markdown 维护，后续扩展时只需要继续新增章节并在首页补充链接即可。
 
 ---
 
-## 这个仓库是什么
+## 📖 这个仓库是什么
 
 这不是教人绕过规则，而是帮助正常用户理解被 flag 之后会发生什么、如何走恢复流程、以及如何留下自己的存在记录。
 
@@ -30,7 +33,7 @@ GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site
 
 ---
 
-## 目录
+## 📂 目录
 
 | # | 章节 | 说明 |
 |---|------|------|
@@ -44,7 +47,7 @@ GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site
 
 ---
 
-## 态度声明
+## ⚠️ 态度声明
 
 - **不鼓励规避风控**：本仓库不提供绕过 GitHub 政策的方法
 - **不承诺"秒解封"**：恢复时间因情况而异，从几天到数月不等
@@ -53,30 +56,30 @@ GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site
 
 ---
 
-## 如何贡献
+## 🤝 如何贡献
 
 如果你曾被 flag 并希望分享你的经历，请查看 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 你可以：
-- 提交你的案例（填写模板，PR 提交）
-- 在 Issue 或 Discussion 中讨论
-- 只想"被记录存在"？查看 [存在档案](docs/06-existence-ledger.md) 了解如何联系我们
+- 📝 提交你的案例（填写模板，PR 提交）
+- 💬 在 Issue 或 Discussion 中讨论
+- 🕯️ 只想"被记录存在"？查看 [存在档案](docs/06-existence-ledger.md) 了解如何联系我们
 
 ---
 
-## 联系方式
+## 📬 联系方式
 
 | 渠道 | 说明 |
 |------|------|
-| GitHub Issue | [提交 Issue](../../issues) |
-| GitHub Discussion | [参与讨论](../../discussions) |
+| GitHub Issue | [提交 Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues) |
+| GitHub Discussion | [参与讨论](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
 | Email | 目前没有 |
 
 > **隐私说明**：默认只公开你同意公开的信息。若你只想"被记录存在"，可以只留下用户名、时间和一句话。
 
 ---
 
-## License
+## 📜 License
 
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
@@ -86,6 +89,6 @@ GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site
 
 ---
 
-## Star History
+## ⭐ Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Chi-Shan0707/github-unflag-playbook-cn&type=Date)](https://star-history.com/#Chi-Shan0707/github-unflag-playbook-cn&Date)
