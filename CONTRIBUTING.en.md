@@ -8,7 +8,7 @@
 
 ### 1. Submit Your Case
 
-If you have been flagged and are willing to share your experience:
+If you have been subject to a moderation action (community term: "flagged") and are willing to share your experience:
 
 **Option A: Use the Issue form (recommended, easiest)**
 - Click [Submit Case Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml)
@@ -54,8 +54,8 @@ Share your experience, suggestions, or questions in [Discussions](../../discussi
 
 ### Conduct Requirements
 
-- **Respect others**: People who have been flagged may be experiencing anxiety and frustration — please be kind
-- **Don't blame the victim**: Do not imply that "being flagged means you did something wrong"
+- **Respect others**: People who have been subject to moderation actions may be experiencing anxiety and frustration — please be kind
+- **Don't blame the victim**: Do not imply that "being restricted means you did something wrong"
 - **Stay objective**: Even for personal experiences, try to present the facts
 
 ### Privacy Requirements
@@ -68,7 +68,7 @@ Share your experience, suggestions, or questions in [Discussions](../../discussi
 
 ## Contact Channels
 
-Given that people who have been flagged may not be able to use GitHub features normally, we provide the following contact channels:
+Given that people who have been subject to moderation actions may not be able to use GitHub features normally, we provide the following contact channels:
 
 | Channel | Details |
 |---------|---------|
