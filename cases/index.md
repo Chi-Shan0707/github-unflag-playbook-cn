@@ -18,7 +18,7 @@ title: 案例库
 
 ## 如何提交你的案例
 
-1. 复制 [案例模板](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/)
+1. 打开案例模板：推荐复制 [GitHub 源码版](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/blob/main/cases/template.md)，也可以先阅读 [网页版模板](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/)
 2. 填写你的信息
 3. 提交 PR，文件命名为 `<你的用户名>.md`
 4. 在 PR 中说明你同意公开这些信息

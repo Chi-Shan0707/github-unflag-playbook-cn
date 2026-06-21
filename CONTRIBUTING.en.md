@@ -16,7 +16,7 @@ If you have been subject to a moderation action (community term: "flagged") and 
 - Maintainers will normalize submitted cases into the Chinese case format under `cases/`
 
 **Option B: Submit a PR**
-1. Copy [cases/template.md](cases/template.md)
+1. Copy the case template ([source version, easier to copy](cases/template.md); [website version, easier to read](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/))
 2. Fill in your information
 3. Rename the file to `<your-github-username>.md`
 4. Submit a PR
@@ -87,7 +87,7 @@ Given that people who have been subject to moderation actions may not be able to
 
 **Title**: `[Case] @your-username`
 
-**Content**: Copy and fill in the template from [cases/template.md](cases/template.md).
+**Content**: Copy and fill in [cases/template.md](cases/template.md); use the [website case template](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/) if you want a cleaner reading view first.
 
 ### Join the Existence Ledger
 

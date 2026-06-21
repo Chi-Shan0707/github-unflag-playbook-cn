@@ -20,7 +20,7 @@
 - 维护者会按中文案例格式整理到 `cases/` 目录
 
 **方式 B：提交 PR**
-1. 复制 [cases/template.md](cases/template.md)
+1. 复制案例模板（[源码版，便于复制](cases/template.md)；[网页版，便于阅读](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/)）
 2. 填写你的信息
 3. 将文件重命名为 `<你的GitHub用户名>.md`
 4. 提交 PR
@@ -91,7 +91,7 @@
 
 **标题**：`[案例] @你的用户名`
 
-**内容**：复制 [cases/template.md](cases/template.md) 中的内容填写。
+**内容**：复制 [cases/template.md](cases/template.md) 中的内容填写；如果只想先阅读结构，也可以看 [网页版案例模板](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/)。
 
 ### 加入存在档案
 

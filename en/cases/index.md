@@ -18,7 +18,7 @@ title: Case Library
 
 ## How to Submit Your Case
 
-1. Copy the [Chinese case template](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/)
+1. Open the Chinese case template: copy from the [GitHub source version](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/blob/main/cases/template.md), or read the cleaner [website version](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/) first
 2. Fill in your information in Chinese
 3. Submit a PR, naming the file `<your-username>.md`
 4. In the PR, confirm that you consent to making this information public
