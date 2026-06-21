@@ -104,8 +104,8 @@ This is not asking for special treatment — it is asking for a fair opportunity
 
 ## Previous
 
-[← Recovery Playbook](04-support-and-appeal-playbook/)
+[← Recovery Playbook](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/docs/04-support-and-appeal-playbook/)
 
 ## Next
 
-[Existence Ledger](06-existence-ledger/)
+[Existence Ledger](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/docs/06-existence-ledger/)

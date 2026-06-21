@@ -10,7 +10,7 @@ title: "Possible Causes: Official Framework & Community Experience"
 
 ## Official Level: GitHub's Publicly Stated Policy Framework
 
-GitHub explicitly states that it takes enforcement action against content or behavior that violates the [Acceptable Use Policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement), including:
+GitHub explicitly states that it takes enforcement action against content or behavior that violates the [Acceptable Use Policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies), including:
 
 - Restricting visibility
 - Restricting access
@@ -119,8 +119,8 @@ The following recommendations come from community experience — **they cannot g
 
 ## Previous
 
-[← Common Symptoms of Being Flagged](02-symptoms/)
+[← Common Symptoms of Being Flagged](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/docs/02-symptoms/)
 
 ## Next
 
-[Recovery Playbook: Support / Appeal / How to Write](04-support-and-appeal-playbook/)
+[Recovery Playbook: Support / Appeal / How to Write](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/docs/04-support-and-appeal-playbook/)

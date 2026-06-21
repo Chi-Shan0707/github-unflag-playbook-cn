@@ -12,7 +12,7 @@ title: 什么是 Flag
 
 GitHub 官方公开描述的是 **moderation actions**（管理措施）和 **Appeal / Reinstatement**（申诉与恢复）流程，而不是一份单独的"flagged account specification"。
 
-参考：[GitHub Appeal and Reinstatement](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement)
+参考：[GitHub Acceptable Use Policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies)
 
 ---
 
@@ -53,7 +53,7 @@ GitHub 官方公开描述的是 **moderation actions**（管理措施）和 **Ap
 
 ### "被 flag 说明我做错了什么"
 
-不一定。社区中有大量误触发案例，包括高频 API 调用、账号被盗后异常活动等。详见 [可能原因](03-possible-causes/)。
+不一定。社区中有大量误触发案例，包括高频 API 调用、账号被盗后异常活动等。详见 [可能原因](https://chi-shan0707.github.io/github-unflag-playbook-cn/docs/03-possible-causes/)。
 
 ### "被 flag 就永远恢复不了"
 
@@ -63,4 +63,4 @@ GitHub 官方公开描述的是 **moderation actions**（管理措施）和 **Ap
 
 ## 下一篇
 
-[被 flag 的常见现象](02-symptoms/)
+[被 flag 的常见现象](https://chi-shan0707.github.io/github-unflag-playbook-cn/docs/02-symptoms/)

@@ -106,8 +106,8 @@ title: 中国大陆常见障碍：SMS 验证
 
 ## 上一篇
 
-[← 自救流程](04-support-and-appeal-playbook/)
+[← 自救流程](https://chi-shan0707.github.io/github-unflag-playbook-cn/docs/04-support-and-appeal-playbook/)
 
 ## 下一篇
 
-[存在档案](06-existence-ledger/)
+[存在档案](https://chi-shan0707.github.io/github-unflag-playbook-cn/docs/06-existence-ledger/)

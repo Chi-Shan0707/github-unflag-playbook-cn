@@ -1,5 +1,5 @@
 name: 📋 提交案例 / Submit Case
- description: 分享你被 flag 的经历，帮助我们完善案例库 / Share your flagged experience to help improve the case library
+description: 分享你被 flag 的经历，帮助我们完善案例库 / Share your flagged experience to help improve the case library
 title: '[案例] '
 labels: ['case']
 body:

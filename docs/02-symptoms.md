@@ -149,14 +149,14 @@ Profile 的自定义数据本身可能还在，但因为账号的可见性被限
 - [ ] 访问自己的 profile 页面 → 自定义区域正常显示吗？
 - [ ] 检查注册邮箱 → 是否有 GitHub 发来的账号状态通知？
 
-如果以上多项异常，你很可能被 flag 了。请查看 [自救流程](04-support-and-appeal-playbook/)
+如果以上多项异常，你很可能被 flag 了。请查看 [自救流程](https://chi-shan0707.github.io/github-unflag-playbook-cn/docs/04-support-and-appeal-playbook/)
 
 ---
 
 ## 上一篇
 
-[← 什么是 Flag](01-what-is-flag/)
+[← 什么是 Flag](https://chi-shan0707.github.io/github-unflag-playbook-cn/docs/01-what-is-flag/)
 
 ## 下一篇
 
-[可能原因：官方框架与社区经验](03-possible-causes/)
+[可能原因：官方框架与社区经验](https://chi-shan0707.github.io/github-unflag-playbook-cn/docs/03-possible-causes/)

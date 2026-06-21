@@ -29,7 +29,7 @@
 
 这不是教人绕过规则，而是帮助正常用户理解被 flag 之后会发生什么、如何走恢复流程、以及如何留下自己的存在记录。
 
-GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement) 和 [Appeal / Reinstatement](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement) 流程，但并没有发布一份完整的"flagged account 指南"。社区里有大量零散案例，但少有一个中文、系统、面向中国大陆用户的整理仓库。
+GitHub 官方公开写的是 [Acceptable Use Policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies) 和 [Appeal / Reinstatement](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement) 流程，但并没有发布一份完整的"flagged account 指南"。社区里有大量零散案例，但少有一个中文、系统、面向中国大陆用户的整理仓库。
 
 ---
 
@@ -61,8 +61,8 @@ GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site
 如果你曾被 flag 并希望分享你的经历，请查看 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 你可以：
-- 📝 提交你的案例（填写模板，PR 提交）
-- 💬 在 Issue 或 Discussion 中讨论
+- 📝 提交你的案例（推荐使用案例 Issue 表单；也可以复制模板后 PR）
+- 💬 在 Discussions 中反馈建议、链接失效或资料补充
 - 🕯️ 只想"被记录存在"？查看 [存在档案](docs/06-existence-ledger.md) 了解如何联系我们
 
 ---
@@ -71,9 +71,12 @@ GitHub 官方公开写的是 [moderation action](https://docs.github.com/en/site
 
 | 渠道 | 说明 |
 |------|------|
-| GitHub Issue | [提交 Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues) |
-| GitHub Discussion | [参与讨论](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
+| 提交案例 | [案例 Issue 表单](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml) |
+| 存在档案 | [存在档案 Issue 表单](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=existence-ledger.yml) |
+| 建议 / 错链反馈 | [参与 Discussions](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
 | Email | 目前没有 |
+
+> 链接原则：阅读型页面指向 GitHub Pages；提交案例、提交 PR、Issue 表单、Discussions 等协作入口指向 GitHub 仓库。
 
 > **隐私说明**：默认只公开你同意公开的信息。若你只想"被记录存在"，可以只留下用户名、时间和一句话。
 

@@ -43,8 +43,8 @@ title: 存在档案
 
 | 渠道 | 说明 |
 |------|------|
-| GitHub Issue | [提交 Issue](../../issues)，标题加 `[存在档案]` 前缀 |
-| GitHub Discussion | [参与讨论](../../discussions) |
+| GitHub Issue | [提交存在档案 Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=existence-ledger.yml)，标题加 `[存在档案]` 前缀 |
+| GitHub Discussion | [参与 Discussions](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
 | Email | 还没想好|
 
 ### 隐私承诺
@@ -72,4 +72,4 @@ title: 存在档案
 
 ## 上一篇
 
-[← 中国大陆常见障碍：SMS 验证](05-china-mainland-sms-problem/)
+[← 中国大陆常见障碍：SMS 验证](https://chi-shan0707.github.io/github-unflag-playbook-cn/docs/05-china-mainland-sms-problem/)

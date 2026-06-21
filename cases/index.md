@@ -12,19 +12,19 @@ title: 案例库
 
 | # | 用户名 | 地区 | 发现时间 | 主要症状 | 第三方授权 | SMS 障碍 | 恢复状态 | 恢复耗时 | 可能原因 |
 |---|--------|------|----------|----------|-----------|---------|----------|----------|----------|
-| 1 | [chi-shan0707](chi-shan0707/) | 中国大陆 | 2025-04 | 主页 404，contributions 消失 | 失败 | 是 | 已恢复 | - | 疑似高频 API / Agent 活动触发风控 |
+| 1 | [chi-shan0707](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/chi-shan0707/) | 中国大陆 | 2025-04 | 主页 404，contributions 消失 | 失败 | 是 | 已恢复 | - | 疑似高频 API / Agent 活动触发风控 |
 
 ---
 
 ## 如何提交你的案例
 
-1. 复制 [案例模板](template/)
+1. 复制 [案例模板](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/)
 2. 填写你的信息
 3. 提交 PR，文件命名为 `<你的用户名>.md`
 4. 在 PR 中说明你同意公开这些信息
 
 如果你不想提交 PR，也可以：
-- 在 [Issue]({{ site.data.nav.meta.repo_url }}/issues) 中填写，我们会帮你整理
+- 使用 [案例 Issue 表单](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml) 填写，我们会帮你整理
 
 ---
 

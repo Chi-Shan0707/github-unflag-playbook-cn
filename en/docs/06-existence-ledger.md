@@ -43,8 +43,8 @@ If you have been flagged or suspended, and cannot recover, you can contact us to
 
 | Channel | Details |
 |---------|---------|
-| GitHub Issue | [Submit an Issue](../../issues), prefix the title with `[Existence Ledger]` |
-| GitHub Discussion | [Join the discussion](../../discussions) |
+| GitHub Issue | [Submit an Existence Ledger Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=existence-ledger.yml), prefix the title with `[Existence Ledger]` |
+| GitHub Discussion | [Join Discussions](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
 | Email | TBD |
 
 ### Privacy Commitment
@@ -72,4 +72,4 @@ If you have been flagged or suspended, and cannot recover, you can contact us to
 
 ## Previous
 
-[← Common Barrier for Mainland China: SMS Verification](05-china-mainland-sms-problem/)
+[← Common Barrier for Mainland China: SMS Verification](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/docs/05-china-mainland-sms-problem/)

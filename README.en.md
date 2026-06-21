@@ -29,7 +29,7 @@ If you are reading this repository through GitHub Pages, the site entry is [inde
 
 This is not a guide to circumventing rules. It helps legitimate users understand what happens when they get flagged, how to navigate the recovery process, and how to leave a record of their existence.
 
-GitHub publicly documents [moderation actions](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement) and the [Appeal / Reinstatement](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement) process, but has not published a comprehensive "flagged account guide." While there are many scattered cases in the community, there is a lack of a systematic, Chinese-language resource tailored to Mainland China users.
+GitHub publicly documents [Acceptable Use Policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies) and the [Appeal / Reinstatement](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement) process, but has not published a comprehensive "flagged account guide." While there are many scattered cases in the community, there is a lack of a systematic, Chinese-language resource tailored to Mainland China users.
 
 ---
 
@@ -37,12 +37,12 @@ GitHub publicly documents [moderation actions](https://docs.github.com/en/site-p
 
 | # | Chapter | Description |
 |---|---------|-------------|
-| 1 | [What Is a Flag](docs/en/01-what-is-flag.md) | Definition, types, and the difference from suspension |
-| 2 | [Common Symptoms](docs/en/02-symptoms.md) | High-confidence symptoms + community-reported symptoms |
-| 3 | [Possible Causes](docs/en/03-possible-causes.md) | Official policy framework + community-reported trigger scenarios |
-| 4 | [Recovery Playbook](docs/en/04-support-and-appeal-playbook.md) | Appeal steps, ticket templates, and important notes |
-| 5 | [SMS Verification Barrier](docs/en/05-china-mainland-sms-problem.md) | Known issues with +86 numbers in the appeal process |
-| 6 | [Existence Ledger](docs/en/06-existence-ledger.md) | Recording those who once truly existed but were hidden |
+| 1 | [What Is a Flag](en/docs/01-what-is-flag.md) | Definition, types, and the difference from suspension |
+| 2 | [Common Symptoms](en/docs/02-symptoms.md) | High-confidence symptoms + community-reported symptoms |
+| 3 | [Possible Causes](en/docs/03-possible-causes.md) | Official policy framework + community-reported trigger scenarios |
+| 4 | [Recovery Playbook](en/docs/04-support-and-appeal-playbook.md) | Appeal steps, ticket templates, and important notes |
+| 5 | [SMS Verification Barrier](en/docs/05-china-mainland-sms-problem.md) | Known issues with +86 numbers in the appeal process |
+| 6 | [Existence Ledger](en/docs/06-existence-ledger.md) | Recording those who once truly existed but were hidden |
 | 7 | [Case Library](cases/index.md) | Detailed experiences from people who were flagged |
 
 ---
@@ -61,9 +61,9 @@ GitHub publicly documents [moderation actions](https://docs.github.com/en/site-p
 If you have been flagged and would like to share your experience, see [CONTRIBUTING.en.md](CONTRIBUTING.en.md).
 
 You can:
-- 📝 Submit your case (fill in the template and submit a PR)
-- 💬 Discuss in Issues or Discussions
-- 🕯️ Just want to "be recorded"? See the [Existence Ledger](docs/en/06-existence-ledger.md) for how to contact us
+- 📝 Submit your case (recommended: case Issue form; PRs with the template are also welcome)
+- 💬 Use Discussions for suggestions, broken-link reports, or source updates
+- 🕯️ Just want to "be recorded"? See the [Existence Ledger](en/docs/06-existence-ledger.md) for how to contact us
 
 ---
 
@@ -71,9 +71,12 @@ You can:
 
 | Channel | Details |
 |---------|---------|
-| GitHub Issue | [Submit an Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues) |
-| GitHub Discussion | [Join the Discussion](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
+| Submit a case | [Case Issue form](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml) |
+| Existence ledger | [Existence Ledger Issue form](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=existence-ledger.yml) |
+| Suggestions / broken links | [Join Discussions](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
 | Email | Not available yet |
+
+> Link rule: reading pages point to GitHub Pages; case submission, PRs, Issue forms, and Discussions point to the GitHub repository.
 
 > **Privacy**: By default, only information you consent to share is made public. If you just want to "be recorded," you can leave only a username, a time, and one sentence.
 

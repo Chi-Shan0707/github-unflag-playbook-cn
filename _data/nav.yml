@@ -57,7 +57,3 @@ languages:
         items:
           - label: Case Library
             url: /en/cases/
-          - label: Case Template
-            url: /en/cases/template/
-          - label: chi-shan0707
-            url: /en/cases/chi-shan0707/

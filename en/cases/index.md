@@ -4,27 +4,28 @@ title: Case Library
 
 # Case Library
 
-> A collection of detailed accounts from people who have been flagged. Every entry is published with the subject's consent.
+> Cases are maintained in Chinese only to avoid duplicate, drifting versions. This English page points to the canonical Chinese case records and submission template.
 
 ---
 
-## Overview
+## Canonical Case Records
 
 | # | Username | Region | Date Discovered | Primary Symptoms | Third-Party Auth | SMS Barrier | Recovery Status | Recovery Time | Suspected Cause |
 |---|----------|--------|-----------------|-----------------|------------------|-------------|-----------------|---------------|-----------------|
-| 1 | [chi-shan0707](chi-shan0707/) | Mainland China | 2025-04 | Profile 404, contributions disappeared | Failed | Yes | Recovered | - | Suspected high-frequency API / Agent activity triggered risk control |
+| 1 | [chi-shan0707](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/chi-shan0707/) | Mainland China | 2025-04 | Profile 404, contributions disappeared | Failed | Yes | Recovered | - | Suspected high-frequency API / Agent activity triggered risk control |
 
 ---
 
 ## How to Submit Your Case
 
-1. Copy the [case template](template/)
-2. Fill in your information
+1. Copy the [Chinese case template](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/template/)
+2. Fill in your information in Chinese
 3. Submit a PR, naming the file `<your-username>.md`
 4. In the PR, confirm that you consent to making this information public
 
 If you don't want to submit a PR, you can also:
-- Fill in your information in an [Issue]({{ site.data.nav.meta.repo_url }}/issues) and we'll help organize it
+- Use the [case Issue form](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml), and maintainers will help organize it
+- Use [Discussions](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) for suggestions, questions, or broken-link reports
 
 ---
 

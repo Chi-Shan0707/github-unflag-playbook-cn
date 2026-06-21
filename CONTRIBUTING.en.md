@@ -1,6 +1,6 @@
 # Contributing
 
-中文 / [English](CONTRIBUTING.en.md)
+[中文](CONTRIBUTING.md) / English
 
 ---
 
@@ -13,6 +13,7 @@ If you have been subject to a moderation action (community term: "flagged") and 
 **Option A: Use the Issue form (recommended, easiest)**
 - Click [Submit Case Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml)
 - Fill in the form — no need to know Markdown or Git
+- Maintainers will normalize submitted cases into the Chinese case format under `cases/`
 
 **Option B: Submit a PR**
 1. Copy [cases/template.md](cases/template.md)
@@ -39,7 +40,9 @@ If you find errors, outdated information, or areas for improvement in the docume
 
 ### 4. Join Discussions
 
-Share your experience, suggestions, or questions in [Discussions](../../discussions).
+Share your experience, suggestions, or questions in [Discussions](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions).
+
+> Simple split: full cases should use the Issue form or PR; general suggestions, broken-link reports, and source updates can go to Discussions.
 
 ---
 
@@ -72,7 +75,9 @@ Given that people who have been subject to moderation actions may not be able to
 
 | Channel | Details |
 |---------|---------|
-| **GitHub internal** | Issue / Discussion / PR |
+| **Submit a case** | [Case Issue form](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml) or PR |
+| **Existence ledger** | [Existence Ledger Issue form](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=existence-ledger.yml) |
+| **Discussion / suggestions** | [GitHub Discussions](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
 
 ---
 

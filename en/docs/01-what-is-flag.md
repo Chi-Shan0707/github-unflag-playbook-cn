@@ -12,7 +12,7 @@ In this repository, `flagged` refers to a type of **account risk-control / moder
 
 GitHub officially describes this using the terms **moderation actions** and **Appeal / Reinstatement**, rather than a dedicated "flagged account specification."
 
-Reference: [GitHub Appeal and Reinstatement](https://docs.github.com/en/site-policy/acceptable-use-policies/github-appeal-and-reinstatement)
+Reference: [GitHub Acceptable Use Policies](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies)
 
 ---
 
@@ -53,7 +53,7 @@ Not necessarily. Many people who are flagged can still log in and operate on pri
 
 ### "Being flagged means I did something wrong"
 
-Not necessarily. The community includes many false-positive cases, including high-frequency API calls, abnormal activity after account compromise, etc. See [Possible Causes](03-possible-causes/).
+Not necessarily. The community includes many false-positive cases, including high-frequency API calls, abnormal activity after account compromise, etc. See [Possible Causes](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/docs/03-possible-causes/).
 
 ### "Being flagged means I can never recover"
 
@@ -63,4 +63,4 @@ No. Many people have successfully recovered their accounts through the appeal pr
 
 ## Next
 
-[Common Symptoms of Being Flagged](02-symptoms/)
+[Common Symptoms of Being Flagged](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/docs/02-symptoms/)

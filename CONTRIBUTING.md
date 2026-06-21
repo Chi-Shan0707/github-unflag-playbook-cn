@@ -17,6 +17,7 @@
 **方式 A：使用 Issue 表单（推荐，最简单）**
 - 直接点击 [提交案例 Issue](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml)
 - 按表单填写即可，无需熟悉 Markdown 或 Git 操作
+- 维护者会按中文案例格式整理到 `cases/` 目录
 
 **方式 B：提交 PR**
 1. 复制 [cases/template.md](cases/template.md)
@@ -43,7 +44,9 @@
 
 ### 4. 参与讨论
 
-在 [Discussion](../../discussions) 中分享你的经验、建议、或问题。
+在 [Discussions](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) 中分享经验、建议或问题。
+
+> 简单区分：完整案例请走 Issue 表单或 PR；一般建议、链接失效反馈、资料补充，可以直接到 Discussions。
 
 ---
 
@@ -76,7 +79,9 @@
 
 | 渠道 | 说明 |
 |------|------|
-| **GitHub 内部** | Issue / Discussion / PR |
+| **提交案例** | [案例 Issue 表单](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml) 或 PR |
+| **存在档案** | [存在档案 Issue 表单](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=existence-ledger.yml) |
+| **讨论建议** | [GitHub Discussions](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/discussions) |
 
 ---
 
