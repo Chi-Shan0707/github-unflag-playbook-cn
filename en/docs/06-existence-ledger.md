@@ -58,7 +58,11 @@ If you have been flagged or suspended, and cannot recover, you can contact us to
 
 ## Profiles
 
-
+### anonymous99-Rise
+- **Date Discovered**: August 2026
+- **Symptoms**: GitHub Actions disabled. Triggered risk control after migrating 179 repositories from a cancelled account.
+- **Status**: Unrecovered, ticket unanswered, emails blocked/returned.
+- **Message**: *(Waiting for Support response)*
 
 ---
 

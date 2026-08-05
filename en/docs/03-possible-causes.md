@@ -45,7 +45,7 @@ However, GitHub has **not** publicly disclosed specific trigger conditions, thre
 
 ### 2. Abnormal Activity After Account Compromise
 
-**Description**: After an account is compromised, attackers use it to create suspicious repositories, push illegal content, or发起 abnormal activity, causing the account to be flagged.
+**Description**: After an account is compromised, attackers use it to create suspicious repositories, push illegal content, or initiate abnormal activity, causing the account to be flagged.
 
 **Community cases**:
 - Users have reported that after their accounts were compromised, large numbers of suspicious repositories were created, and their accounts were subsequently flagged
@@ -60,7 +60,7 @@ However, GitHub has **not** publicly disclosed specific trigger conditions, thre
 **Description**: The account's behavior pattern is determined by the system to be similar to spam or suspicious activity.
 
 **Common scenarios**:
-- Creating a large number of repositories or forks in a short period
+- Creating a large number of repositories, forks, or mirrors in a short time (e.g., migrating/mirroring over a hundred repositories across accounts)
 - Sending large numbers of issues / PRs / comments
 - Account behavior pattern similar to profiles flagged as spam
 - New accounts with a large amount of activity in a short period

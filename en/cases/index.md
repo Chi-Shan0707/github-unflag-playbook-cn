@@ -13,6 +13,7 @@ title: Case Library
 | # | Username | Region | Date Discovered | Primary Symptoms | Third-Party Auth | SMS Barrier | Recovery Status | Recovery Time | Suspected Cause |
 |---|----------|--------|-----------------|-----------------|------------------|-------------|-----------------|---------------|-----------------|
 | 1 | [chi-shan0707](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/chi-shan0707/) | Mainland China | 2025-04 | Profile 404, contributions disappeared | Failed | Yes | Recovered | - | Suspected high-frequency API / Agent activity triggered risk control |
+| 2 | [anonymous99-Rise](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/cases/anonymous99-rise/) | Unknown | 2026-08 | GitHub Actions disabled | - | - | Unrecovered | - | High-volume repository migration (179 repos) |
 
 ---
 

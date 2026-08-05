@@ -33,6 +33,8 @@ languages:
             url: /cases/template/
           - label: chi-shan0707
             url: /cases/chi-shan0707/
+          - label: anonymous99-Rise
+            url: /cases/anonymous99-rise/
   en:
     home_url: /en/
     home_label: English
@@ -57,3 +59,5 @@ languages:
         items:
           - label: Case Library
             url: /en/cases/
+          - label: anonymous99-Rise
+            url: /en/cases/anonymous99-rise/

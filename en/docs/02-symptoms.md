@@ -135,6 +135,17 @@ The custom profile data may still exist, but because your account's visibility i
 
 ---
 
+### 12. GitHub Actions Partially Disabled
+
+**Symptoms**:
+- Primary account login and code pushing work normally.
+- GitHub Actions interface displays error: "GitHub Actions is currently disabled for your account. Please reach out to GitHub Support for assistance."
+- Unable to execute any CI/CD workflows.
+
+**Case Source**: [Issue #4](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/4)
+
+---
+
 ## Self-Check Checklist
 
 If you suspect you've been flagged, work through these steps:

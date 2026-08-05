@@ -135,6 +135,17 @@ Profile 的自定义数据本身可能还在，但因为账号的可见性被限
 
 ---
 
+### 12. GitHub Actions 被局部禁用
+
+**表现**：
+- 你的主账号登录、代码 push 等基础功能正常。
+- 仓库中的 Actions 界面报错："GitHub Actions is currently disabled for your account. Please reach out to GitHub Support for assistance."
+- 无法运行任何 CI/CD 工作流。
+
+**案例来源**：[Issue #4](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/4)
+
+---
+
 ## 自查清单
 
 如果你怀疑自己被 flag，按以下步骤排查：

@@ -13,6 +13,7 @@ title: 案例库
 | # | 用户名 | 地区 | 发现时间 | 主要症状 | 第三方授权 | SMS 障碍 | 恢复状态 | 恢复耗时 | 可能原因 |
 |---|--------|------|----------|----------|-----------|---------|----------|----------|----------|
 | 1 | [chi-shan0707](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/chi-shan0707/) | 中国大陆 | 2025-04 | 主页 404，contributions 消失 | 失败 | 是 | 已恢复 | - | 疑似高频 API / Agent 活动触发风控 |
+| 2 | [anonymous99-Rise](https://chi-shan0707.github.io/github-unflag-playbook-cn/cases/anonymous99-rise/) | 未知 | 2026-08 | GitHub Actions 被禁用 | - | - | 未恢复 | - | 短期内大批量迁移 179 个仓库 |
 
 ---
 
