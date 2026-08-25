@@ -14,3 +14,7 @@ defaults:
       path: "en"
     values:
       lang: "en"
+  - scope:
+      path: "cases"
+    values:
+      switch_url: "/en/cases/"

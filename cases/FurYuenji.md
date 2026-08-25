@@ -1,8 +1,8 @@
 ---
-title: FurYuenji 的 Github Flag 解除经历
+title: FurYuenji 的 GitHub Flag 解除经历
 ---
 
-# FurYuenji 的 Github Flag 解除经历
+# FurYuenji 的 GitHub Flag 解除经历
 
 
 ## 基本信息
@@ -27,7 +27,7 @@ title: FurYuenji 的 Github Flag 解除经历
 
 **详细描述**：
 
-我在浏览他人博客并提交评论时，所使用的评论方案通过 Github Third-Party 登录，授权时提示错误并显示账号被 Flag 的信息，我觉得比较不方便，就自行研究解除，当时有些焦躁没有想到会有如此优秀的仓库解决问题，于是就按经验行事，借助翻译器提交工单解封成功，觉得这是一个有意义的阅历且我的方法比较独到，撰写博文 [GitHubFlag标记解除过程](https://zooyoo.top/article/40/)，偶然看到此仓库，希望分享一下自己的解决方案
+我在浏览他人博客并提交评论时，所使用的评论方案通过 GitHub Third-Party 登录，授权时提示错误并显示账号被 Flag 的信息，我觉得比较不方便，就自行研究解除，当时有些焦躁没有想到会有如此优秀的仓库解决问题，于是就按经验行事，借助翻译器提交工单解封成功，觉得这是一个有意义的阅历且我的方法比较独到，撰写博文 [GitHub Flag 标记解除过程](https://zooyoo.top/article/40/)，偶然看到此仓库，希望分享一下自己的解决方案。
 
 
 ---
@@ -97,10 +97,11 @@ title: FurYuenji 的 Github Flag 解除经历
 
 ## 证据链接 / 截图
 
-[GitHubFlag标记解除过程.含复盘分析与注意事项](https://zooyoo.top/article/40/)
-[GitHub邮件往来.含Flag标记解除工单和官方回复内容.可使用记事本打开.非永久链接请转存](https://pan.chenzhizuo.com/down.php/910a7a68cddccbcb67a0bac4a2f94431.eml)
-[Flag标记解除账户](https://github.com/FurYuenji/)
-[我使用的可以绕过SMS验证的工单提交链接.不保证长期有效性](https://support.github.com/contact/account-access)
+- [GitHub Flag 标记解除过程（个人博客，含复盘分析与注意事项）](https://zooyoo.top/article/40/)
+- [恢复后的 GitHub 账户](https://github.com/FurYuenji/)
+- [GitHub Support 账户访问入口](https://support.github.com/contact/account-access)
+
+> **外链安全说明**：以上链接在 2026 年 8 月 25 日收录时经过检查，但第三方页面内容可能变化，请自行判断。原案例提供的第三方 `.eml` 下载链接未收录：邮件存档可能包含邮箱等敏感字段，且外部下载内容可被替换，本站无法持续验证或为其安全性背书。
 
 
 ---

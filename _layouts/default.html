@@ -3,65 +3,139 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f4f7f6">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self'; script-src 'self'; font-src 'self' data:; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.data.nav.meta.title }}</title>
     {% if site.description or page.description %}
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | prepend: site.baseurl }}">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕯️</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230d766e'/><path d='M50 18 78 30v21c0 18-11 28-28 34C33 79 22 69 22 51V30z' fill='none' stroke='white' stroke-width='7'/><path d='m36 51 9 9 19-21' fill='none' stroke='white' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/></svg>">
   </head>
-  <body>
-    {% assign lang = page.lang | default: 'zh' %}
-    {% assign nav = site.data.nav.languages[lang] %}
-    {% assign other_lang = 'en' %}
-    {% if lang == 'en' %}
-      {% assign other_lang = 'zh' %}
-    {% endif %}
-    {% assign other_nav = site.data.nav.languages[other_lang] %}
-    {% assign current_url = page.url | replace: 'index.html', '' %}
-    {% if lang == 'en' %}
-      {% if current_url == '/en/' %}
-        {% assign switch_url = '/' %}
-      {% else %}
-        {% assign switch_url = current_url | replace_first: '/en/', '/' %}
-      {% endif %}
+  {% assign lang = page.lang | default: 'zh' %}
+  {% assign nav = site.data.nav.languages[lang] %}
+  {% assign other_lang = 'en' %}
+  {% if lang == 'en' %}
+    {% assign other_lang = 'zh' %}
+  {% endif %}
+  {% assign other_nav = site.data.nav.languages[other_lang] %}
+  {% assign current_url = page.url | replace: 'index.html', '' %}
+  {% if lang == 'en' %}
+    {% if current_url == '/en/' %}
+      {% assign switch_url = '/' %}
     {% else %}
-      {% if current_url == '/' %}
-        {% assign switch_url = '/en/' %}
-      {% else %}
-        {% assign switch_url = '/en' | append: current_url %}
-      {% endif %}
+      {% assign switch_url = current_url | replace_first: '/en/', '/' %}
     {% endif %}
+  {% else %}
+    {% if current_url == '/' %}
+      {% assign switch_url = '/en/' %}
+    {% else %}
+      {% assign switch_url = '/en' | append: current_url %}
+    {% endif %}
+  {% endif %}
+  {% if page.switch_url %}
+    {% assign switch_url = page.switch_url %}
+  {% endif %}
+  <body class="page-{{ page.page_class | default: 'article' }}" data-lang="{{ lang }}">
+    <a class="skip-link" href="#main-content">{% if lang == 'zh' %}跳至正文{% else %}Skip to content{% endif %}</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+    <header class="mobile-header">
+      <a class="mobile-brand" href="{{ nav.home_url | prepend: site.baseurl }}" aria-label="{{ site.data.nav.meta.title }}">
+        <span class="brand-mark brand-mark--small" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M16 3.5 26 8v7.4c0 6.5-3.8 10.5-10 13.1-6.2-2.6-10-6.6-10-13.1V8z"/><path class="brand-check" d="m11 15.7 3.1 3.1 7-7"/></svg>
+        </span>
+        <span>Unflag Playbook</span>
+      </a>
+      <div class="mobile-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="{% if lang == 'zh' %}切换深浅主题{% else %}Toggle color theme{% endif %}">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-button menu-toggle" type="button" aria-label="{% if lang == 'zh' %}打开导航{% else %}Open navigation{% endif %}" aria-expanded="false" aria-controls="site-sidebar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="nav-scrim" aria-hidden="true"></div>
     <div class="page-shell">
-      <aside class="sidebar">
-        <div class="brand">
-          <a class="brand-title" href="{{ nav.home_url | prepend: site.baseurl }}">{{ site.data.nav.meta.title }}</a>
-          <p>{{ site.data.nav.meta.subtitle[lang] }}</p>
+      <aside class="sidebar" id="site-sidebar">
+        <div class="sidebar-top">
+          <a class="brand" href="{{ nav.home_url | prepend: site.baseurl }}">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 5 39 11.5v11.1c0 9.8-5.7 15.7-15 19.6-9.3-3.9-15-9.8-15-19.6V11.5z"/><path class="brand-check" d="m16.5 23.5 4.7 4.7 10.5-10.5"/></svg>
+            </span>
+            <span class="brand-copy">
+              <strong>Unflag</strong>
+              <small>Playbook CN</small>
+            </span>
+          </a>
+          <button class="icon-button sidebar-close" type="button" aria-label="{% if lang == 'zh' %}关闭导航{% else %}Close navigation{% endif %}">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+          </button>
         </div>
-        <div class="lang-switch">
-          <a class="lang-button{% if lang == 'zh' %} is-active{% endif %}" href="{{ nav.home_url | prepend: site.baseurl }}">{{ nav.home_label }}</a>
-          <a class="lang-button{% if lang == 'en' %} is-active{% endif %}" href="{{ switch_url | prepend: site.baseurl }}">{{ nav.switch_label }}</a>
+
+        <p class="brand-description">{{ site.data.nav.meta.subtitle[lang] }}</p>
+
+        <div class="lang-switch" aria-label="{% if lang == 'zh' %}语言选择{% else %}Language selection{% endif %}">
+          <a class="lang-button{% if lang == 'zh' %} is-active{% endif %}" href="{% if lang == 'zh' %}{{ nav.home_url | prepend: site.baseurl }}{% else %}{{ switch_url | prepend: site.baseurl }}{% endif %}"{% if lang == 'zh' %} aria-current="true"{% endif %}>中文</a>
+          <a class="lang-button{% if lang == 'en' %} is-active{% endif %}" href="{% if lang == 'en' %}{{ nav.home_url | prepend: site.baseurl }}{% else %}{{ switch_url | prepend: site.baseurl }}{% endif %}"{% if lang == 'en' %} aria-current="true"{% endif %}>English</a>
         </div>
-        {% for section in nav.sections %}
-          <section class="nav-section">
-            <h2>{{ section.title }}</h2>
-            <ul class="nav-list">
-              {% for item in section.items %}
-                <li>
-                  <a href="{{ item.url | prepend: site.baseurl }}"{% if current_url == item.url %} class="is-active"{% endif %}>{{ item.label }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </section>
-        {% endfor %}
+
+        <nav class="site-nav" aria-label="{% if lang == 'zh' %}主导航{% else %}Main navigation{% endif %}">
+          {% for section in nav.sections %}
+            <section class="nav-section">
+              <h2>{{ section.title }}</h2>
+              <ul class="nav-list">
+                {% for item in section.items %}
+                  <li>
+                    <a href="{{ item.url | prepend: site.baseurl }}"{% if current_url == item.url %} class="is-active" aria-current="page"{% endif %}>
+                      <span>{{ item.label }}</span>
+                      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7.5 4.5 5 5-5 5"/></svg>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endfor %}
+        </nav>
+
         <footer class="sidebar-footer">
-          <a href="{{ site.data.nav.meta.repo_url }}" target="_blank" rel="noopener" class="repo-link">GitHub ↗</a>
-          <p class="license">CC BY-NC-SA 4.0</p>
+          <a href="{{ site.data.nav.meta.repo_url }}" target="_blank" rel="noopener noreferrer" class="repo-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.4 9.4 0 0 0-3 18.3c.5.1.6-.2.6-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.7 0-1 .4-1.9 1-2.5-.1-.3-.4-1.3.1-2.5 0 0 .8-.3 2.6 1a8.8 8.8 0 0 1 4.8 0c1.8-1.2 2.6-1 2.6-1 .5 1.2.2 2.2.1 2.5.6.6 1 1.4 1 2.5 0 3.6-2.4 4.4-4.6 4.7.4.3.7.9.7 1.8v2.7c0 .4.2.6.7.5A9.4 9.4 0 0 0 12 2.8Z"/></svg>
+            <span>{% if lang == 'zh' %}在 GitHub 上参与{% else %}Contribute on GitHub{% endif %}</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <div class="footer-meta">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>{% if lang == 'zh' %}社区维护{% else %}Community maintained{% endif %}</span>
+            <span>CC BY-NC-SA 4.0</span>
+          </div>
         </footer>
       </aside>
-      <main class="content">
-        {{ content }}
+
+      <main class="main-stage" id="main-content" tabindex="-1">
+        <div class="desktop-toolbar">
+          <span class="toolbar-context">{% if lang == 'zh' %}开放 · 克制 · 可验证{% else %}Open · careful · verifiable{% endif %}</span>
+          <div class="toolbar-actions">
+            <a class="toolbar-link" href="{{ switch_url | prepend: site.baseurl }}">{{ other_nav.home_label }}</a>
+            <button class="icon-button theme-toggle" type="button" aria-label="{% if lang == 'zh' %}切换深浅主题{% else %}Toggle color theme{% endif %}">
+              <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <article class="content">
+          {{ content }}
+        </article>
+
+        <footer class="site-footer">
+          <p>{% if lang == 'zh' %}由社区共同维护。内容仅供参考，请优先以 GitHub 官方说明为准。{% else %}Maintained by the community. Always defer to official GitHub guidance when available.{% endif %}</p>
+          <a href="{{ site.data.nav.meta.repo_url }}" target="_blank" rel="noopener noreferrer">{% if lang == 'zh' %}纠错或贡献{% else %}Suggest an edit{% endif %} ↗</a>
+        </footer>
       </main>
     </div>
+    <script src="{{ '/assets/js/site.js' | prepend: site.baseurl }}" defer></script>
   </body>
 </html>

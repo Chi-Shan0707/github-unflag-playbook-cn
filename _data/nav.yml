@@ -35,6 +35,8 @@ languages:
             url: /cases/chi-shan0707/
           - label: anonymous99-Rise
             url: /cases/anonymous99-rise/
+          - label: FurYuenji
+            url: /cases/FurYuenji/
   en:
     home_url: /en/
     home_label: English
@@ -60,4 +62,6 @@ languages:
           - label: Case Library
             url: /en/cases/
           - label: anonymous99-Rise
-            url: /en/cases/anonymous99-rise/
+            url: /cases/anonymous99-rise/
+          - label: FurYuenji (中文)
+            url: /cases/FurYuenji/
