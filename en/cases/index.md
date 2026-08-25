@@ -6,57 +6,40 @@ description: Real GitHub account restriction and recovery stories published with
 
 # Case Library
 
-<p class="library-intro">Real experiences make abstract advice useful. These records are published with explicit consent and document symptoms, timelines, and recovery paths. Canonical case records remain in Chinese to avoid duplicate versions drifting apart.</p>
+<p class="library-intro">Account restriction and recovery records published with explicit consent. Canonical case files remain in Chinese to avoid duplicate versions drifting apart.</p>
 
-<div class="case-grid">
-  <a class="case-card" href="{{ '/cases/chi-shan0707/' | relative_url }}">
-    <div class="case-card__top">
-      <span class="case-avatar" aria-hidden="true">C</span>
-      <span class="status-badge">Recovered</span>
-    </div>
-    <h3>chi-shan0707</h3>
-    <p class="case-card__meta">Mainland China · April 2025</p>
-    <p class="case-card__summary">Profile 404 and missing contributions, possibly triggered by high-frequency API / Agent activity.</p>
-    <span class="case-card__cta">Read the Chinese record →</span>
+<div class="case-list">
+  <a class="case-row" href="{{ '/cases/chi-shan0707/' | relative_url }}">
+    <span class="case-row__person"><strong>chi-shan0707</strong><small>Mainland China · April 2025</small></span>
+    <p class="case-row__summary">Profile 404 and missing contributions, possibly triggered by high-frequency API / Agent activity.</p>
+    <span class="status">Recovered</span>
   </a>
-
-  <a class="case-card" href="{{ '/cases/anonymous99-rise/' | relative_url }}">
-    <div class="case-card__top">
-      <span class="case-avatar" aria-hidden="true">A</span>
-      <span class="status-badge status-badge--pending">Unrecovered</span>
-    </div>
-    <h3>anonymous99-Rise</h3>
-    <p class="case-card__meta">Region unknown · August 2026</p>
-    <p class="case-card__summary">GitHub Actions was disabled after 179 repositories were migrated in a short period.</p>
-    <span class="case-card__cta">Read the record →</span>
+  <a class="case-row" href="{{ '/cases/anonymous99-rise/' | relative_url }}">
+    <span class="case-row__person"><strong>anonymous99-Rise</strong><small>Region unknown · August 2026</small></span>
+    <p class="case-row__summary">GitHub Actions was disabled after 179 repositories were migrated in a short period.</p>
+    <span class="status status--pending">Unrecovered</span>
   </a>
-
-  <a class="case-card" href="{{ '/cases/FurYuenji/' | relative_url }}">
-    <div class="case-card__top">
-      <span class="case-avatar" aria-hidden="true">F</span>
-      <span class="status-badge">Recovered</span>
-    </div>
-    <h3>FurYuenji</h3>
-    <p class="case-card__meta">China · July 2026</p>
-    <p class="case-card__summary">Hidden profile, missing search results, and failed third-party authorization; recovered after about seven days.</p>
-    <span class="case-card__cta">Read the Chinese record →</span>
+  <a class="case-row" href="{{ '/cases/FurYuenji/' | relative_url }}">
+    <span class="case-row__person"><strong>FurYuenji</strong><small>China · July 2026</small></span>
+    <p class="case-row__summary">Hidden profile, missing search results, and failed OAuth; recovered after about seven days.</p>
+    <span class="status">Recovered</span>
   </a>
 </div>
 
-## How to Submit Your Case
+## Submit a Case
 
 1. Copy the [GitHub source template](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/blob/main/cases/template.md), or read the [website version]({{ '/cases/template/' | relative_url }}) first
-2. Fill in your information and remove email addresses, ticket numbers, or other sensitive details
+2. Fill in your experience and remove email addresses, ticket numbers, or other sensitive details
 3. Submit a PR with the filename `<your-username>.md`
-4. Confirm in the PR that you consent to making the information public
+4. Confirm in the PR that you consent to publication
 
 You may instead use the [case Issue form](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/new?template=case-report.yml), and maintainers will help organize it.
 
-<div class="privacy-panel">
+<section class="policy-note">
   <h2>Privacy & external links</h2>
   <ul>
-    <li>Cases are published only with the subject's <strong>explicit consent</strong> and may be changed or removed on request.</li>
-    <li>Email addresses, ticket numbers, and other sensitive information should be anonymized before publication.</li>
-    <li>External links open in an isolated new tab. They are reviewed when added, but this site cannot endorse future changes made by third parties.</li>
+    <li>Cases are published only with explicit consent and may be changed or removed on request.</li>
+    <li>Email addresses, ticket numbers, and other sensitive information should be anonymized.</li>
+    <li>Links are reviewed when added and open in an isolated tab; third-party content may still change.</li>
   </ul>
-</div>
+</section>
