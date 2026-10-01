@@ -1,6 +1,6 @@
 name: 🕯️ 加入存在档案 / Join Existence Ledger
 description: 只想被记录存在，不需要写完整案例 / Just want to be recorded, no full case needed
-title: '[存在档案] '
+title: '[存在档案] @'
 labels: ['existence-ledger']
 body:
   - type: markdown
@@ -22,7 +22,7 @@ body:
     attributes:
       label: 大概时间 / Approximate Time
       placeholder: e.g. 2025-04
-
+    validations: {}
   - type: input
     id: sentence
     attributes:

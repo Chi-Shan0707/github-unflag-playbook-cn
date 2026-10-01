@@ -1,6 +1,6 @@
 name: 📋 提交案例 / Submit Case
 description: 分享你被 flag 的经历，帮助我们完善案例库 / Share your flagged experience to help improve the case library
-title: '[案例] '
+title: '[案例] @'
 labels: ['case']
 body:
   - type: markdown
@@ -22,13 +22,13 @@ body:
     attributes:
       label: 地区 / Region
       placeholder: e.g. 中国大陆 / Mainland China
-
+    validations: {}
   - type: input
     id: date-discovered
     attributes:
       label: 发现被 flag 的时间 / Date Discovered
       placeholder: e.g. 2025-04
-
+    validations: {}
   - type: checkboxes
     id: symptoms
     attributes:
@@ -48,13 +48,13 @@ body:
     attributes:
       label: 详细描述 / Detailed Description
       placeholder: 描述你遇到的情况...
-
+    validations: {}
   - type: textarea
     id: appeal-timeline
     attributes:
       label: 申诉时间线 / Appeal Timeline
       placeholder: 何时提交 appeal，Support 如何回复，是否恢复...
-
+    validations: {}
   - type: dropdown
     id: status
     attributes:
@@ -63,13 +63,13 @@ body:
         - 未恢复 / Not recovered
         - 恢复中 / In progress
         - 已恢复 / Recovered
-
+    validations: {}
   - type: textarea
     id: message
     attributes:
       label: 你想对其他被 flag 的人说的话 / Message to Others
       placeholder: 建议、鼓励，或任何你想说的...
-
+    validations: {}
   - type: checkboxes
     id: consent
     attributes:
