@@ -18,11 +18,13 @@
 {%- if page.switch_url -%}
   {%- assign switch_url = page.switch_url -%}
 {%- endif -%}
-{#- Individual case pages have no English translation: the `path: "cases"`
-    default scope points their language switch at the EN case library, which is
-    a different page, not a translation. Emitting an alternate there would be a
-    non-reciprocal hreflang, which Google discards. The footer switch is
-    unaffected — it should still lead to the EN library. -#}
+{%- comment -%}
+  Individual case pages have no English translation: the `path: "cases"`
+  default scope points their language switch at the EN case library, which is a
+  different page, not a translation. Emitting an alternate there would be a
+  non-reciprocal hreflang, which Google discards. The footer switch is
+  unaffected — it should still lead to the EN library.
+{%- endcomment -%}
 {%- assign has_translation = true -%}
 {%- if lang == 'zh' and page.url contains '/cases/' and page.url != '/cases/' -%}
   {%- assign has_translation = false -%}
@@ -41,9 +43,11 @@
 {%- assign in_language = 'zh-Hans' -%}
 {%- if lang == 'en' -%}{%- assign in_language = 'en' -%}{%- endif -%}
 {%- assign home_url = site.url | append: site.baseurl | append: nav.home_url -%}
-{#- Breadcrumb section for this page, from the active nav item. -#}
-{%- assign crumb_section_title = '' -%}
-{%- assign crumb_section_url = '' -%}
+{%- comment -%}
+  Breadcrumb section for this page, from the active nav item.
+{%- endcomment -%}
+{%- assign crumb_section_title = nil -%}
+{%- assign crumb_section_url = nil -%}
 {%- for section in nav.sections -%}
   {%- for item in section.items -%}
     {%- if item.url == current_url -%}
@@ -74,8 +78,10 @@
     {%- if has_translation %}
     <link rel="alternate" hreflang="{% if lang == 'zh' %}en{% else %}zh-Hans{% endif %}" href="{{ alternate_url }}">
     {%- endif %}
-    {#- x-default is the fallback for unmatched locales, so it must be one
-        site-wide URL rather than the current language's home page. -#}
+    {%- comment -%}
+      x-default is the fallback for unmatched locales, so it must be one
+      site-wide URL rather than the current language's home page.
+    {%- endcomment -%}
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/">
     <meta property="og:site_name" content="{{ site.data.nav.meta.title }}">
     <meta property="og:type" content="{{ og_type }}">
@@ -95,11 +101,13 @@
     <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
     <meta name="twitter:image" content="{{ og_image }}">
     <meta name="twitter:image:alt" content="{{ site.data.nav.meta.title }}">
-    {#- JSON-LD is emitted here rather than from site.js: most crawlers that
-        feed search and generative engines never execute JavaScript, so runtime
-        injection would hide the structured data from exactly the readers it is
-        for. `application/ld+json` is a data block, so the CSP above (which
-        blocks executable inline script) does not apply to it. -#}
+    {%- comment -%}
+      JSON-LD is emitted here rather than from site.js: most crawlers that
+      feed search and generative engines never execute JavaScript, so runtime
+      injection would hide the structured data from exactly the readers it is
+      for. `application/ld+json` is a data block, so the CSP above (which
+      blocks executable inline script) does not apply to it.
+    {%- endcomment -%}
     {%- capture ldjson -%}
 {
   "@context": "https://schema.org",
@@ -148,6 +156,9 @@
         <span class="brand-signal" aria-hidden="true"><i></i></span>
         <span>Unflag Playbook</span>
       </a>
+      <button class="menu-button mobile-search-toggle" type="button" aria-label="{% if lang == 'zh' %}搜索{% else %}Search{% endif %}" aria-controls="site-sidebar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
       <button class="menu-button menu-toggle" type="button" aria-label="{% if lang == 'zh' %}打开导航{% else %}Open navigation{% endif %}" aria-expanded="false" aria-controls="site-sidebar">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14M5 16h14"/></svg>
       </button>
@@ -166,6 +177,38 @@
           <button class="menu-button sidebar-close" type="button" aria-label="{% if lang == 'zh' %}关闭导航{% else %}Close navigation{% endif %}">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg>
           </button>
+        </div>
+
+        {%- comment -%}
+          Search index. Emitted once per page as a non-executable JSON data
+          block so assets/js/site.js can read it without a network request
+          (`connect-src 'none'`), and so search works with no build-time JS
+          framework. Only titled pages are indexed.
+        {%- endcomment -%}
+        <div class="search" role="search">
+          <label class="visually-hidden" for="site-search">{% if lang == 'zh' %}搜索站内内容{% else %}Search this site{% endif %}</label>
+          <div class="search-field">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m20 20-3.5-3.5"/></svg>
+            <input
+              id="site-search"
+              class="search-input"
+              type="search"
+              role="combobox"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              enterkeyhint="search"
+              aria-expanded="false"
+              aria-controls="site-search-results"
+              aria-describedby="site-search-status"
+              placeholder="{% if lang == 'zh' %}搜索关键词{% else %}Search keywords{% endif %}"
+            >
+            <button class="search-clear" type="button" hidden aria-label="{% if lang == 'zh' %}清除搜索{% else %}Clear search{% endif %}">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg>
+            </button>
+          </div>
+          <p class="search-status" id="site-search-status" role="status" aria-live="polite"></p>
+          <ul class="search-results" id="site-search-results" role="listbox" aria-label="{% if lang == 'zh' %}搜索结果{% else %}Search results{% endif %}" hidden></ul>
         </div>
 
         <nav class="site-nav" aria-label="{% if lang == 'zh' %}主导航{% else %}Main navigation{% endif %}">
@@ -205,6 +248,55 @@
     </div>
 
     <div class="nav-scrim" aria-hidden="true"></div>
+    {%- comment -%}
+      The search index, emitted once per page. `application/json` is a data
+      block, so the CSP above (script-src 'self') does not apply, and no
+      fetch is involved — the policy already sets connect-src 'none'. Text is
+      stripped of HTML and truncated; `<` is escaped so a literal </script>
+      in community-authored content cannot close this element.
+    {%- endcomment -%}
+    {%- comment -%}
+      The separator is driven by whether anything has been appended yet, not by
+      `forloop.first`: untitled pages (robots.txt, sitemap.xml) are skipped by
+      the `if` below, so forloop.first can already be false on the first
+      emitted entry, which would leave a leading comma.
+    {%- endcomment -%}
+    {%- assign search_index = '' -%}
+    {%- for entry in site.pages -%}
+      {%- if entry.title and entry.url contains '/' -%}
+        {%- comment -%}
+            `entry.content` is the page's raw Markdown, so it still contains
+            that page's own Liquid. Rendering it here is not possible (no
+            plugin, and it would recurse), so the tags are stripped instead.
+            The only Liquid used in page bodies is `{{ '<path>' | relative_url }}`
+            for internal links; collapsing it to the bare path keeps a useful
+            token and drops the syntax. If a new kind of Liquid is added to a
+            page body, extend this list so its text cannot leak into results.
+          {%- endcomment -%}
+          {%- assign entry_text = entry.content | replace: '{{', '' | replace: '}}', '' | replace: '| relative_url', '' | replace: "'", '' | strip_html | strip_newlines | replace: '<', ' ' | replace: '>', ' ' | replace: '#', ' ' | replace: '---', ' ' | replace: '**', ' ' | replace: '*', ' ' | replace: '`', ' ' | normalize_whitespace | truncate: 1200 -%}
+        {%- unless search_index == '' -%}
+          {%- assign search_index = search_index | append: ',' -%}
+        {%- endunless -%}
+        {%- comment -%}
+          Each field is jsonified in its own `assign`. A Liquid filter chain
+          does not scope to a filter argument: writing
+          `append: entry.url | prepend: site.baseurl | jsonify` would apply
+          prepend and jsonify to the accumulator, not to entry.url.
+        {%- endcomment -%}
+        {%- assign entry_url = entry.url | prepend: site.baseurl | jsonify -%}
+        {%- assign entry_title = entry.title | strip | jsonify -%}
+        {%- assign entry_body = entry_text | jsonify -%}
+        {%- assign entry_json = '{"u":' -%}
+        {%- assign entry_json = entry_json | append: entry_url -%}
+        {%- assign entry_json = entry_json | append: ',"t":' -%}
+        {%- assign entry_json = entry_json | append: entry_title -%}
+        {%- assign entry_json = entry_json | append: ',"x":' -%}
+        {%- assign entry_json = entry_json | append: entry_body -%}
+        {%- assign entry_json = entry_json | append: '}' -%}
+        {%- assign search_index = search_index | append: entry_json -%}
+      {%- endif -%}
+    {%- endfor -%}
+    <script type="application/json" id="site-search-index">[{{ search_index | replace: '<', '\u003c' | replace: '>', '\u003e' | replace: '&', '\u0026' }}]</script>
     <script src="{{ '/assets/js/site.js' | prepend: site.baseurl }}" defer></script>
   </body>
 </html>

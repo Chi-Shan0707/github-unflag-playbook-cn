@@ -5,6 +5,26 @@ baseurl: /github-unflag-playbook-cn
 theme: minima
 permalink: pretty
 
+# GitHub Pages runs Jekyll 3.9, whose `exclude` does not merge with the
+# built-in list — it replaces it. The defaults are restated here so nothing
+# is silently un-excluded. These four files are repo documentation, not site
+# pages: they have no front matter, but a dot in the basename still makes
+# Jekyll treat the `.en` pair as Pages, which would publish them under the
+# site layout, land them in sitemap.xml, and emit an hreflang pointing at
+# pages that do not exist.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - README.en.md
+  - CONTRIBUTING.md
+  - CONTRIBUTING.en.md
+
 defaults:
   - scope:
       path: ""

@@ -199,6 +199,11 @@ a:hover {
 .brand-signal i {
   position: absolute;
   left: -5px;
+  /* The `*` reset does not reach pseudo-elements, so without this the two
+     pseudo dots lay out at 12x12 (8px content + 2px border each side) while
+     the real <i> is 8x8. The mismatched heights overlap and the three dots
+     read as one solid bar instead of three. */
+  box-sizing: border-box;
   width: 8px;
   height: 8px;
   border: 2px solid var(--surface);
@@ -221,9 +226,163 @@ a:hover {
   background: var(--accent);
 }
 
+/* ------------------------------------------------------------------ search */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.search {
+  margin-top: 28px;
+}
+
+.search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 2;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 38px 0 34px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--page);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9375rem;
+  appearance: none;
+}
+
+.search-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-input::placeholder {
+  color: var(--muted);
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.search-clear {
+  position: absolute;
+  right: 5px;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.search-clear svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.search-clear:hover {
+  color: var(--text);
+  background: var(--accent-soft);
+}
+
+.search-clear:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.search-status {
+  margin: 8px 2px 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.search-status:empty {
+  display: none;
+}
+
+.search-results {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.search-results li {
+  border-bottom: 1px solid var(--line);
+}
+
+.search-result {
+  display: block;
+  padding: 9px 10px;
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.search-result:hover,
+.search-result:focus-visible {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.search-result strong {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.search-result small {
+  display: block;
+  margin-top: 2px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-result mark {
+  padding: 0;
+  border-radius: 2px;
+  background: none;
+  color: var(--accent);
+  font-weight: 650;
+}
+
 .site-nav {
   flex: 1;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .nav-section + .nav-section {
@@ -605,9 +764,16 @@ a:hover {
 .menu-button svg {
   width: 19px;
   fill: none;
-  stroke: currentColor;
+  stroke: currentcolor;
   stroke-linecap: round;
   stroke-width: 1.6;
+}
+
+/* The mobile search entry point only exists below the breakpoint, where the
+   sidebar is an off-canvas drawer; there would otherwise be no way to reach
+   the search field without opening the drawer first. */
+.mobile-search-toggle {
+  display: none;
 }
 
 /* -------------------------------------------------------------------- home */
@@ -905,13 +1071,25 @@ a:hover {
     background: var(--surface);
   }
 
+  .mobile-search-toggle {
+    display: grid;
+    margin-left: auto;
+  }
+
+  .search-input {
+    /* WCAG 2.2 target size: keep the touch target at 44px on touch devices. */
+    min-height: 44px;
+  }
+
   .mobile-brand {
     font-size: 0.9375rem;
     font-weight: 650;
   }
 
   .mobile-brand .brand-signal {
-    height: 26px;
+    /* Keep the 30px box so the three dots keep their 3px gaps at any scale;
+       shrinking the box alone would re-merge the bottom two dots. */
+    height: 30px;
     transform: scale(0.85);
   }
 
@@ -922,11 +1100,21 @@ a:hover {
     width: min(86vw, 320px);
     height: 100vh;
     transform: translateX(-103%);
-    transition: transform 160ms ease;
+    /* Sliding off-canvas does not remove the links from the tab order, so a
+       keyboard user on a phone would walk 17 invisible stops. site.js mirrors
+       this with `inert`, which also drops the subtree from the a11y tree;
+       visibility is the no-JS fallback. */
+    visibility: hidden;
+    /* Visibility flips immediately on open (so the drawer can take focus) but
+       only after the slide-out finishes on close, otherwise the drawer would
+       vanish mid-animation. */
+    transition: transform 160ms ease, visibility 0s linear 160ms;
   }
 
   body.nav-open .sidebar {
     transform: translateX(0);
+    visibility: visible;
+    transition: transform 160ms ease, visibility 0s;
   }
 
   .sidebar-close {
