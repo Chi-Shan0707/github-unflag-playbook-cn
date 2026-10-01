@@ -1,0 +1,12 @@
+---
+layout: none
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for page in site.pages %}{% if page.title %}  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+{% if page.last_modified_at or page.date %}    <lastmod>{{ page.last_modified_at | default: page.date | date_to_xmlschema }}</lastmod>
+{% endif %}    <changefreq>monthly</changefreq>
+  </url>
+{% endif %}{% endfor %}</urlset>

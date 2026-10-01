@@ -1,5 +1,58 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'zh' }}">
+{% assign lang = page.lang | default: 'zh' -%}
+{%- assign nav = site.data.nav.languages[lang] -%}
+{%- assign current_url = page.url | replace: 'index.html', '' -%}
+{%- if lang == 'en' -%}
+  {%- if current_url == '/en/' -%}
+    {%- assign switch_url = '/' -%}
+  {%- else -%}
+    {%- assign switch_url = current_url | replace_first: '/en/', '/' -%}
+  {%- endif -%}
+{%- else -%}
+  {%- if current_url == '/' -%}
+    {%- assign switch_url = '/en/' -%}
+  {%- else -%}
+    {%- assign switch_url = '/en' | append: current_url -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if page.switch_url -%}
+  {%- assign switch_url = page.switch_url -%}
+{%- endif -%}
+{#- Individual case pages have no English translation: the `path: "cases"`
+    default scope points their language switch at the EN case library, which is
+    a different page, not a translation. Emitting an alternate there would be a
+    non-reciprocal hreflang, which Google discards. The footer switch is
+    unaffected — it should still lead to the EN library. -#}
+{%- assign has_translation = true -%}
+{%- if lang == 'zh' and page.url contains '/cases/' and page.url != '/cases/' -%}
+  {%- assign has_translation = false -%}
+{%- endif -%}
+{%- assign canonical_url = site.url | append: site.baseurl | append: page.url -%}
+{%- assign alternate_url = site.url | append: site.baseurl | append: switch_url -%}
+{%- assign og_title = page.title | default: site.data.nav.meta.title -%}
+{%- if page.url == '/' or page.url == '/en/' -%}
+  {%- assign og_title = site.data.nav.meta.title -%}
+{%- endif -%}
+{%- assign og_type = 'website' -%}
+{%- if page.url != '/' and page.url != '/en/' -%}
+  {%- assign og_type = 'article' -%}
+{%- endif -%}
+{%- assign og_image = site.url | append: site.baseurl | append: '/assets/og/cover.png' -%}
+{%- assign in_language = 'zh-Hans' -%}
+{%- if lang == 'en' -%}{%- assign in_language = 'en' -%}{%- endif -%}
+{%- assign home_url = site.url | append: site.baseurl | append: nav.home_url -%}
+{#- Breadcrumb section for this page, from the active nav item. -#}
+{%- assign crumb_section_title = '' -%}
+{%- assign crumb_section_url = '' -%}
+{%- for section in nav.sections -%}
+  {%- for item in section.items -%}
+    {%- if item.url == current_url -%}
+      {%- assign crumb_section_title = section.title -%}
+      {%- assign crumb_section_url = section.items.first.url -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+<html lang="{{ lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,34 +60,86 @@
     <meta name="theme-color" content="#fafbf9" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0f1513" media="(prefers-color-scheme: dark)">
     <!-- Strict CSP: no inline <style>, no inline <script>, no data: fonts.
-         Keep every rule in assets/css/site.css and every behaviour in assets/js/site.js. -->
+         Keep every rule in assets/css/site.css and every behaviour in assets/js/site.js.
+         The one <script> below is `application/ld+json`: a non-executable data
+         block, so `script-src` does not apply to it (CSP3 checks the script
+         type). It is inline so crawlers that never run JS still see it. -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self'; script-src 'self'; font-src 'self' data:; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.data.nav.meta.title }}</title>
+    <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.data.nav.meta.title | escape }}</title>
     {% if site.description or page.description %}
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     {% endif %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="alternate" hreflang="{{ in_language }}" href="{{ canonical_url }}">
+    {%- if has_translation %}
+    <link rel="alternate" hreflang="{% if lang == 'zh' %}en{% else %}zh-Hans{% endif %}" href="{{ alternate_url }}">
+    {%- endif %}
+    {#- x-default is the fallback for unmatched locales, so it must be one
+        site-wide URL rather than the current language's home page. -#}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/">
+    <meta property="og:site_name" content="{{ site.data.nav.meta.title }}">
+    <meta property="og:type" content="{{ og_type }}">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="{{ og_title | escape }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:locale" content="{% if lang == 'zh' %}zh_CN{% else %}en_US{% endif %}">
+    {%- if has_translation %}
+    <meta property="og:locale:alternate" content="{% if lang == 'zh' %}en_US{% else %}zh_CN{% endif %}">
+    {%- endif %}
+    <meta property="og:image" content="{{ og_image }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{ site.data.nav.meta.title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ og_title | escape }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="twitter:image" content="{{ og_image }}">
+    <meta name="twitter:image:alt" content="{{ site.data.nav.meta.title }}">
+    {#- JSON-LD is emitted here rather than from site.js: most crawlers that
+        feed search and generative engines never execute JavaScript, so runtime
+        injection would hide the structured data from exactly the readers it is
+        for. `application/ld+json` is a data block, so the CSP above (which
+        blocks executable inline script) does not apply to it. -#}
+    {%- capture ldjson -%}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ home_url }}#website",
+      "url": "{{ home_url }}",
+      "name": {{ site.data.nav.meta.title | jsonify }},
+      "inLanguage": "{{ in_language }}",
+      "description": {{ page.description | default: site.description | jsonify }}
+    }{% if crumb_section_title %},
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": {{ site.data.nav.meta.title | jsonify }}, "item": "{{ home_url }}" }{% if crumb_section_url != current_url %},
+        { "@type": "ListItem", "position": 2, "name": {{ crumb_section_title | jsonify }}, "item": "{{ site.url }}{{ site.baseurl }}{{ crumb_section_url }}" },
+        { "@type": "ListItem", "position": 3, "name": {{ page.title | default: site.data.nav.meta.title | jsonify }}, "item": "{{ canonical_url }}" }{% else %},
+        { "@type": "ListItem", "position": 2, "name": {{ page.title | default: site.data.nav.meta.title | jsonify }}, "item": "{{ canonical_url }}" }{% endif %}
+      ]
+    }{% endif %}{% unless page.page_class %},
+    {
+      "@type": "Article",
+      "@id": "{{ canonical_url }}#article",
+      "headline": {{ page.title | jsonify }},
+      "inLanguage": "{{ in_language }}",
+      "url": "{{ canonical_url }}",
+      "image": "{{ og_image }}",
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ canonical_url }}" },
+      "description": {{ page.description | default: site.description | jsonify }},
+      "author": { "@type": "Organization", "name": {{ site.data.nav.meta.title | jsonify }} },
+      "publisher": { "@type": "Organization", "name": {{ site.data.nav.meta.title | jsonify }} }
+    }{% endunless %}
+  ]
+}
+    {%- endcapture -%}
+    <script type="application/ld+json">{{ ldjson }}</script>
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | prepend: site.baseurl }}">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23167568'/><path d='m27 51 15 15 31-34' fill='none' stroke='white' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/></svg>">
   </head>
-  {% assign lang = page.lang | default: 'zh' %}
-  {% assign nav = site.data.nav.languages[lang] %}
-  {% assign current_url = page.url | replace: 'index.html', '' %}
-  {% if lang == 'en' %}
-    {% if current_url == '/en/' %}
-      {% assign switch_url = '/' %}
-    {% else %}
-      {% assign switch_url = current_url | replace_first: '/en/', '/' %}
-    {% endif %}
-  {% else %}
-    {% if current_url == '/' %}
-      {% assign switch_url = '/en/' %}
-    {% else %}
-      {% assign switch_url = '/en' | append: current_url %}
-    {% endif %}
-  {% endif %}
-  {% if page.switch_url %}
-    {% assign switch_url = page.switch_url %}
-  {% endif %}
   <body class="page-{{ page.page_class | default: 'article' }}" data-lang="{{ lang }}">
     <a class="skip-link" href="#main-content">{% if lang == 'zh' %}跳至正文{% else %}Skip to content{% endif %}</a>
 

@@ -1,0 +1,9 @@
+---
+layout: none
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /
+Disallow: /assets/screenshots/
+
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml

@@ -33,7 +33,7 @@
   --success-soft: #e4f1ea;
   --pending: #8a4f1e;
   --pending-soft: #f7ece0;
-  --sidebar-width: 272px;
+  --sidebar-width: 296px;
   --content-width: 720px;
   --wide-width: 768px;
   --step: 4px;
@@ -145,7 +145,7 @@ a:hover {
   top: 0;
   display: flex;
   height: 100vh;
-  padding: 32px 24px 20px;
+  padding: 40px 28px 24px;
   overflow-y: auto;
   flex-direction: column;
   border-right: 1px solid var(--line);
@@ -175,15 +175,15 @@ a:hover {
 }
 
 .brand strong {
-  font-size: 0.95rem;
+  font-size: 1.0625rem;
   font-weight: 650;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
 }
 
 .brand small {
-  margin-top: 4px;
+  margin-top: 5px;
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 0.78rem;
 }
 
 .brand-signal {
@@ -223,19 +223,19 @@ a:hover {
 
 .site-nav {
   flex: 1;
-  margin-top: 36px;
+  margin-top: 40px;
 }
 
 .nav-section + .nav-section {
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .nav-section h2 {
-  margin: 0 10px 8px;
+  margin: 0 12px 10px;
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.09em;
 }
 
 .nav-list {
@@ -249,12 +249,13 @@ a:hover {
 .nav-list a {
   position: relative;
   display: block;
-  padding: 7px 10px;
-  border-radius: 7px;
+  padding: 9px 12px;
+  border-radius: 8px;
   color: var(--muted);
-  font-size: 0.8125rem;
-  line-height: 1.5;
+  font-size: 0.9375rem;
+  line-height: 1.6;
   text-decoration: none;
+  transition: background-color 120ms ease, color 120ms ease;
 }
 
 .nav-list a:hover {
@@ -270,8 +271,8 @@ a:hover {
 
 .nav-list a.is-active::before {
   position: absolute;
-  top: 9px;
-  bottom: 9px;
+  top: 11px;
+  bottom: 11px;
   left: 0;
   width: 2px;
   border-radius: 2px;
@@ -281,13 +282,13 @@ a:hover {
 
 .sidebar-footer {
   display: flex;
-  margin-top: 28px;
-  padding-top: 18px;
+  margin-top: 32px;
+  padding-top: 20px;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
   border-top: 1px solid var(--line);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 .lang-switch {
@@ -321,7 +322,7 @@ a:hover {
   width: min(var(--content-width), calc(100% - 72px));
   min-height: calc(100vh - 120px);
   margin: 0 auto;
-  padding: 76px 0 96px;
+  padding: 88px 0 104px;
 }
 
 .page-home .content,
@@ -362,7 +363,7 @@ a:hover {
    gets an asymmetric margin instead of its own rule: a rule here would land
    next to the `---` and read as a double line. */
 .content h2 {
-  margin: 2.4em 0 0.7em;
+  margin: 2.6em 0 0.75em;
   font-size: 1.4rem;
   letter-spacing: -0.015em;
 }
@@ -404,7 +405,7 @@ a:hover {
 
 .content hr {
   height: 1px;
-  margin: 2.4rem 0;
+  margin: 2.75rem 0;
   border: 0;
   background: var(--line);
 }
@@ -424,11 +425,11 @@ a:hover {
 }
 
 .content blockquote {
-  margin: 1.6rem 0;
-  padding: 0.85rem 1.1rem;
-  border: 0;
-  border-radius: 10px;
-  background: var(--accent-soft);
+  margin: 2.1rem 0;
+  padding: 0.15rem 0 0.15rem 1.2rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0;
+  background: none;
   color: var(--text-soft);
   font-size: 0.95rem;
 }
@@ -612,7 +613,7 @@ a:hover {
 /* -------------------------------------------------------------------- home */
 .home-intro {
   max-width: 40em;
-  padding: 4px 0 56px;
+  padding: 4px 0 64px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -648,15 +649,16 @@ a:hover {
 .button {
   display: inline-flex;
   min-height: 44px;
-  padding: 0 18px;
+  padding: 0 20px;
   align-items: center;
   border: 1px solid var(--line-strong);
-  border-radius: 8px;
+  border-radius: 999px;
   background: var(--surface);
   color: var(--text);
   font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
 }
 
 .button:hover {
@@ -678,7 +680,7 @@ a:hover {
 }
 
 .home-section {
-  margin-top: 56px;
+  margin-top: 64px;
 }
 
 .section-title {
@@ -712,7 +714,7 @@ a:hover {
   display: grid;
   grid-template-columns: 40px minmax(0, 1fr) auto;
   gap: 14px;
-  padding: 15px 12px;
+  padding: 16px 12px;
   align-items: center;
   border-bottom: 1px solid var(--line);
   border-radius: 0 8px 8px 0;
@@ -761,7 +763,7 @@ a:hover {
   display: grid;
   grid-template-columns: minmax(140px, 0.8fr) minmax(0, 1.6fr) auto;
   gap: 20px;
-  padding: 14px 12px;
+  padding: 15px 12px;
   align-items: center;
   border-bottom: 1px solid var(--line);
   border-radius: 0 8px 8px 0;
@@ -820,7 +822,7 @@ a:hover {
   display: grid;
   grid-template-columns: minmax(150px, 0.8fr) minmax(0, 1.5fr) auto;
   gap: 24px;
-  padding: 22px 12px;
+  padding: 24px 12px;
   align-items: start;
   border-bottom: 1px solid var(--line);
   border-radius: 0 8px 8px 0;
@@ -904,7 +906,7 @@ a:hover {
   }
 
   .mobile-brand {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 650;
   }
 
@@ -917,7 +919,7 @@ a:hover {
     position: fixed;
     z-index: 50;
     inset: 0 auto 0 0;
-    width: min(86vw, 304px);
+    width: min(86vw, 320px);
     height: 100vh;
     transform: translateX(-103%);
     transition: transform 160ms ease;
@@ -981,7 +983,7 @@ a:hover {
   }
 
   .home-section {
-    margin-top: 44px;
+    margin-top: 48px;
   }
 
   .section-title {
