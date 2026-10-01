@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" content="#f7f9f8">
+    <meta name="theme-color" content="#fafbf9" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1513" media="(prefers-color-scheme: dark)">
+    <!-- Strict CSP: no inline <style>, no inline <script>, no data: fonts.
+         Keep every rule in assets/css/site.css and every behaviour in assets/js/site.js. -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self'; script-src 'self'; font-src 'self' data:; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.data.nav.meta.title }}</title>
     {% if site.description or page.description %}
@@ -76,11 +79,11 @@
         </nav>
 
         <footer class="sidebar-footer">
-          <div class="lang-switch" aria-label="{% if lang == 'zh' %}语言选择{% else %}Language selection{% endif %}">
+          <nav class="lang-switch" aria-label="{% if lang == 'zh' %}语言选择{% else %}Language selection{% endif %}">
             <a class="{% if lang == 'zh' %}is-active{% endif %}" href="{% if lang == 'zh' %}{{ nav.home_url | prepend: site.baseurl }}{% else %}{{ switch_url | prepend: site.baseurl }}{% endif %}"{% if lang == 'zh' %} aria-current="true"{% endif %}>中文</a>
             <span aria-hidden="true">/</span>
             <a class="{% if lang == 'en' %}is-active{% endif %}" href="{% if lang == 'en' %}{{ nav.home_url | prepend: site.baseurl }}{% else %}{{ switch_url | prepend: site.baseurl }}{% endif %}"{% if lang == 'en' %} aria-current="true"{% endif %}>English</a>
-          </div>
+          </nav>
           <a class="repo-link" href="{{ site.data.nav.meta.repo_url }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </footer>
       </aside>

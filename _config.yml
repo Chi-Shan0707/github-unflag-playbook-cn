@@ -10,10 +10,12 @@ defaults:
     values:
       layout: "default"
       lang: "zh"
+      description: "面向中国大陆开发者的 GitHub 账号隐藏、限制与恢复自救手册与案例档案。"
   - scope:
       path: "en"
     values:
       lang: "en"
+      description: "A playbook and case archive for GitHub users affected by hidden, restricted, or suspended account status."
   - scope:
       path: "cases"
     values:
