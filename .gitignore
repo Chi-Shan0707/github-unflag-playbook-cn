@@ -1,0 +1,17 @@
+# Build output and local tooling artefacts. The site is built by GitHub Pages;
+# nothing here is needed to read or edit the content.
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+Gemfile.lock
+vendor/
+.bundle/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
