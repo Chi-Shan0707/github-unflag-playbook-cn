@@ -1,5 +1,5 @@
 ---
-title: GitHub Unflag Playbook CN
+title: 首页
 page_class: home
 description: 面向中国大陆开发者的 GitHub 账号隐藏、限制与恢复自救手册。
 ---
@@ -62,5 +62,6 @@ description: 面向中国大陆开发者的 GitHub 账号隐藏、限制与恢�
     <a class="recent-row" href="{{ '/cases/chi-shan0707/' | relative_url }}"><strong>chi-shan0707</strong><span>主页 404、Contributions 消失</span><span class="status">已恢复</span></a>
     <a class="recent-row" href="{{ '/cases/anonymous99-rise/' | relative_url }}"><strong>anonymous99-Rise</strong><span>GitHub Actions 被禁用</span><span class="status status--pending">未恢复</span></a>
     <a class="recent-row" href="{{ '/cases/FurYuenji/' | relative_url }}"><strong>FurYuenji</strong><span>主页隐藏、搜索和第三方授权异常</span><span class="status">已恢复</span></a>
+    <a class="recent-row" href="{{ '/cases/AMahiru30/' | relative_url }}"><strong>AMahiru30</strong><span>账号 suspended：主页仍可见但无法推送</span><span class="status status--pending">未恢复</span></a>
   </div>
 </section>

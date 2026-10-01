@@ -1,0 +1,6 @@
+Case screenshots live in a per-user folder here, e.g.:
+
+    assets/screenshots/<your-github-username>/screenshot.png
+
+Referenced from cases/<your-github-username>.md under "证据链接 / 截图".
+(Jekyll ignores dot-prefixed files, so this placeholder is never published.)

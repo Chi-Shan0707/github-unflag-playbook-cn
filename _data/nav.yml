@@ -37,6 +37,8 @@ languages:
             url: /cases/anonymous99-rise/
           - label: FurYuenji
             url: /cases/FurYuenji/
+          - label: AMahiru30
+            url: /cases/AMahiru30/
   en:
     home_url: /en/
     home_label: English
@@ -47,7 +49,7 @@ languages:
         items:
           - label: What Is a Flag
             url: /en/docs/01-what-is-flag/
-          - label: Common Symptoms
+          - label: Common Symptoms of Being Flagged
             url: /en/docs/02-symptoms/
           - label: "Possible Causes: Official Framework & Community Experience"
             url: /en/docs/03-possible-causes/
@@ -61,7 +63,13 @@ languages:
         items:
           - label: Case Library
             url: /en/cases/
-          - label: anonymous99-Rise
+          - label: Case Template (中文)
+            url: /cases/template/
+          - label: chi-shan0707 (中文)
+            url: /cases/chi-shan0707/
+          - label: anonymous99-Rise (中文)
             url: /cases/anonymous99-rise/
           - label: FurYuenji (中文)
             url: /cases/FurYuenji/
+          - label: AMahiru30 (中文)
+            url: /cases/AMahiru30/

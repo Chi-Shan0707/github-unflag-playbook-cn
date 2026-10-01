@@ -1,5 +1,5 @@
 ---
-title: GitHub Unflag Playbook CN
+title: Home
 page_class: home
 description: A practical recovery playbook for GitHub users affected by hidden or restricted account status.
 ---
@@ -62,5 +62,6 @@ description: A practical recovery playbook for GitHub users affected by hidden o
     <a class="recent-row" href="{{ '/cases/chi-shan0707/' | relative_url }}"><strong>chi-shan0707</strong><span>Profile 404 and missing contributions</span><span class="status">Recovered</span></a>
     <a class="recent-row" href="{{ '/cases/anonymous99-rise/' | relative_url }}"><strong>anonymous99-Rise</strong><span>GitHub Actions disabled</span><span class="status status--pending">Unrecovered</span></a>
     <a class="recent-row" href="{{ '/cases/FurYuenji/' | relative_url }}"><strong>FurYuenji</strong><span>Hidden profile, search, and OAuth failures</span><span class="status">Recovered</span></a>
+    <a class="recent-row" href="{{ '/cases/AMahiru30/' | relative_url }}"><strong>AMahiru30</strong><span>Account suspended: profile visible, push denied</span><span class="status status--pending">Unrecovered</span></a>
   </div>
 </section>

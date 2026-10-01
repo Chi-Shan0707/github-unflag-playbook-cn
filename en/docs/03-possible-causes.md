@@ -123,4 +123,4 @@ The following recommendations come from community experience — **they cannot g
 
 ## Next
 
-[Recovery Playbook: Support / Appeal / How to Write](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/docs/04-support-and-appeal-playbook/)
+[Recovery Playbook: Support / Appeal](https://chi-shan0707.github.io/github-unflag-playbook-cn/en/docs/04-support-and-appeal-playbook/)

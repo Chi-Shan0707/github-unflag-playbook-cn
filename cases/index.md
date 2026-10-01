@@ -24,6 +24,11 @@ description: 经当事人授权公开的 GitHub 账号 Flag 与恢复经历。
     <p class="case-row__summary">主页隐藏、搜索不到且第三方授权失败；提交工单后约 7 天恢复。</p>
     <span class="status">已恢复</span>
   </a>
+  <a class="case-row" href="{{ '/cases/AMahiru30/' | relative_url }}">
+    <span class="case-row__person"><strong>AMahiru30</strong><small>地区未提供 · 2026 年 9 月</small></span>
+    <p class="case-row__summary">主页与公开仓库仍可见，但账号被 suspended：<code>git push</code> 返回 403；工单未触发 SMS 验证。</p>
+    <span class="status status--pending">未恢复</span>
+  </a>
 </div>
 
 ## 提交案例

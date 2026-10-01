@@ -22,7 +22,7 @@ title: 案例：anonymous99-Rise
 - [ ] 搜索不到
 - [ ] 外部登录（Log in with GitHub）失败
 - [ ] 收到 GitHub 警告邮件
-- [x] 其他：GitHub Actions 被禁用
+- [X] 其他：GitHub Actions 被禁用
 
 **详细描述**：
 主账号登录和 git push 依然可以正常使用。但是 GitHub Actions 被完全禁用，页面提示："GitHub Actions is currently disabled for your account. Please reach out to GitHub Support for assistance."。
@@ -56,7 +56,7 @@ title: 案例：anonymous99-Rise
 - [ ] 高频 API / CLI 调用
 - [ ] 使用 AI 编程工具 / Agent
 - [ ] 账号可能被盗
-- [x] 批量操作（大量 fork / 创建仓库等）：大批量迁移/镜像了 179 个仓库
+- [X] 批量操作（大量 fork / 创建仓库等）：大批量迁移/镜像了 179 个仓库
 - [ ] 其他：
 
 ---
@@ -80,7 +80,7 @@ title: 案例：anonymous99-Rise
 ## 恢复情况
 
 **当前状态**：
-- [x] 未恢复
+- [X] 未恢复
 - [ ] 恢复中
 - [ ] 已恢复
 
@@ -102,7 +102,7 @@ N/A
 
 ## 证据链接 / 截图
 
-> 如有截图或链接，请放在 `assets/screenshots/anonymous99-rise/` 目录下。
+> 如有截图或链接，请放在 `assets/screenshots/anonymous99-Rise/` 目录下。
 
 [Issue #4](https://github.com/Chi-Shan0707/github-unflag-playbook-cn/issues/4)
 
@@ -110,6 +110,6 @@ N/A
 
 ## 同意声明
 
-- 我同意将以上信息在本仓库中公开
-- 我同意在案例总览表中列出我的基本信息
-- 我理解我可以随时要求删除或修改我的案例
+- [X] 我同意将以上信息在本仓库中公开
+- [X] 我同意在案例总览表中列出我的基本信息
+- [X] 我理解我可以随时要求删除或修改我的案例

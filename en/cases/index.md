@@ -24,6 +24,11 @@ description: Real GitHub account restriction and recovery stories published with
     <p class="case-row__summary">Hidden profile, missing search results, and failed OAuth; recovered after about seven days.</p>
     <span class="status">Recovered</span>
   </a>
+  <a class="case-row" href="{{ '/cases/AMahiru30/' | relative_url }}">
+    <span class="case-row__person"><strong>AMahiru30</strong><small>Region not provided · September 2026</small></span>
+    <p class="case-row__summary">Account suspended: the profile and public repositories stay visible, but <code>git push</code> returns 403. The ticket required no SMS verification.</p>
+    <span class="status status--pending">Unrecovered</span>
+  </a>
 </div>
 
 ## Submit a Case

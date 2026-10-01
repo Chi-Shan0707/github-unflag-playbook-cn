@@ -24,6 +24,12 @@ This page is for them.
 
 If you have been flagged or suspended, and cannot recover, you can contact us to have your existence recorded on this page.
 
+### Who Is Recorded Here
+
+This ledger only records accounts whose **public presence has been erased**: a 404 profile, repositories no longer public, no search results, contributions missing from other projects.
+
+**If your profile and repositories are still publicly reachable** and only writes are denied or your appeal is unresolved, please do not register here. Submit a case instead — the case library tracks your symptoms, timeline, and appeal progress. Once your account is restored you can ask for the case to be moved here.
+
 ### You Choose How Much to Share
 
 **Minimum information** (one-line entry):
