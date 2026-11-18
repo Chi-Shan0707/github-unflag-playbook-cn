@@ -29,6 +29,11 @@ description: 经当事人授权公开的 GitHub 账号 Flag 与恢复经历。
     <p class="case-row__summary">主页与公开仓库仍可见，但账号被 suspended：<code>git push</code> 返回 403；工单未触发 SMS 验证。</p>
     <span class="status status--pending">未恢复</span>
   </a>
+  <a class="case-row" href="{{ '/cases/rennsax/' | relative_url }}">
+    <span class="case-row__person"><strong>rennsax</strong><small>中国 · 2026 年 6 月</small></span>
+    <p class="case-row__summary">主页 404、Contributions 消失，Actions、Pages 与第三方授权均受限；借助台湾手机号通过验证后约一周恢复。</p>
+    <span class="status">已恢复</span>
+  </a>
 </div>
 
 ## 提交案例

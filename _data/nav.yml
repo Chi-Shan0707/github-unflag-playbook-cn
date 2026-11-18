@@ -39,6 +39,8 @@ languages:
             url: /cases/FurYuenji/
           - label: AMahiru30
             url: /cases/AMahiru30/
+          - label: rennsax
+            url: /cases/rennsax/
   en:
     home_url: /en/
     home_label: English
@@ -73,3 +75,5 @@ languages:
             url: /cases/FurYuenji/
           - label: AMahiru30 (中文)
             url: /cases/AMahiru30/
+          - label: rennsax (中文)
+            url: /cases/rennsax/

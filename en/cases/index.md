@@ -29,6 +29,11 @@ description: Real GitHub account restriction and recovery stories published with
     <p class="case-row__summary">Account suspended: the profile and public repositories stay visible, but <code>git push</code> returns 403. The ticket required no SMS verification.</p>
     <span class="status status--pending">Unrecovered</span>
   </a>
+  <a class="case-row" href="{{ '/cases/rennsax/' | relative_url }}">
+    <span class="case-row__person"><strong>rennsax</strong><small>China · June 2026</small></span>
+    <p class="case-row__summary">Profile 404, missing contributions, and Actions, Pages, and OAuth disabled; recovered in about a week after SMS verification via a Taiwan number.</p>
+    <span class="status">Recovered</span>
+  </a>
 </div>
 
 ## Submit a Case
