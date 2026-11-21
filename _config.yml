@@ -24,6 +24,7 @@ exclude:
   - README.en.md
   - CONTRIBUTING.md
   - CONTRIBUTING.en.md
+  - AGENTS.md
 
 defaults:
   - scope:
