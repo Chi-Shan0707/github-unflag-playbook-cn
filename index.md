@@ -64,5 +64,6 @@ description: 面向中国大陆开发者的 GitHub 账号隐藏、限制与恢�
     <a class="recent-row" href="{{ '/cases/FurYuenji/' | relative_url }}"><strong>FurYuenji</strong><span>主页隐藏、搜索和第三方授权异常</span><span class="status">已恢复</span></a>
     <a class="recent-row" href="{{ '/cases/AMahiru30/' | relative_url }}"><strong>AMahiru30</strong><span>账号 suspended：主页仍可见但无法推送</span><span class="status status--pending">未恢复</span></a>
     <a class="recent-row" href="{{ '/cases/rennsax/' | relative_url }}"><strong>rennsax</strong><span>主页 404、Contributions 消失、Actions 等全面受限</span><span class="status">已恢复</span></a>
+    <a class="recent-row" href="{{ '/cases/yanli-nyan/' | relative_url }}"><strong>yanli-nyan</strong><span>突发 403 掉线，主页 404、Pages 与外部登录受限</span><span class="status">已恢复</span></a>
   </div>
 </section>

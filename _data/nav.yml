@@ -41,6 +41,8 @@ languages:
             url: /cases/AMahiru30/
           - label: rennsax
             url: /cases/rennsax/
+          - label: yanli-nyan
+            url: /cases/yanli-nyan/
   en:
     home_url: /en/
     home_label: English
@@ -77,3 +79,5 @@ languages:
             url: /cases/AMahiru30/
           - label: rennsax (中文)
             url: /cases/rennsax/
+          - label: yanli-nyan (中文)
+            url: /cases/yanli-nyan/

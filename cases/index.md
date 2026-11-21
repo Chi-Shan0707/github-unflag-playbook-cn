@@ -34,6 +34,11 @@ description: 经当事人授权公开的 GitHub 账号 Flag 与恢复经历。
     <p class="case-row__summary">主页 404、Contributions 消失，Actions、Pages 与第三方授权均受限；借助台湾手机号通过验证后约一周恢复。</p>
     <span class="status">已恢复</span>
   </a>
+  <a class="case-row" href="{{ '/cases/yanli-nyan/' | relative_url }}">
+    <span class="case-row__person"><strong>yanli-nyan</strong><small>中国大陆 · 2026 年 10 月</small></span>
+    <p class="case-row__summary">同时操作多个仓库并打包发布 APK 时突发 403 且全端掉线，主页 404、Pages 与外部登录均受限；邮箱接收验证码提交工单后经多次跟进约 22 天恢复。</p>
+    <span class="status">已恢复</span>
+  </a>
 </div>
 
 ## 提交案例

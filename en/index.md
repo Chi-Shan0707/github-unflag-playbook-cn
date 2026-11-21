@@ -64,5 +64,6 @@ description: A practical recovery playbook for GitHub users affected by hidden o
     <a class="recent-row" href="{{ '/cases/FurYuenji/' | relative_url }}"><strong>FurYuenji</strong><span>Hidden profile, search, and OAuth failures</span><span class="status">Recovered</span></a>
     <a class="recent-row" href="{{ '/cases/AMahiru30/' | relative_url }}"><strong>AMahiru30</strong><span>Account suspended: profile visible, push denied</span><span class="status status--pending">Unrecovered</span></a>
     <a class="recent-row" href="{{ '/cases/rennsax/' | relative_url }}"><strong>rennsax</strong><span>Profile 404, missing contributions, Actions disabled</span><span class="status">Recovered</span></a>
+    <a class="recent-row" href="{{ '/cases/yanli-nyan/' | relative_url }}"><strong>yanli-nyan</strong><span>403 sign-out, profile 404, Pages and external login disabled</span><span class="status">Recovered</span></a>
   </div>
 </section>

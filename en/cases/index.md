@@ -34,6 +34,11 @@ description: Real GitHub account restriction and recovery stories published with
     <p class="case-row__summary">Profile 404, missing contributions, and Actions, Pages, and OAuth disabled; recovered in about a week after SMS verification via a Taiwan number.</p>
     <span class="status">Recovered</span>
   </a>
+  <a class="case-row" href="{{ '/cases/yanli-nyan/' | relative_url }}">
+    <span class="case-row__person"><strong>yanli-nyan</strong><small>Mainland China · October 2026</small></span>
+    <p class="case-row__summary">Hit 403 and forced sign-out while operating multiple repositories and publishing a release APK, with profile 404, Pages, and external login disabled; verified via email and recovered after about 22 days of follow-ups.</p>
+    <span class="status">Recovered</span>
+  </a>
 </div>
 
 ## Submit a Case
